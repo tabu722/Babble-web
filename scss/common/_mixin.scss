@@ -1,0 +1,19 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin clickBtn($width: 157px, $height: 64px, $background: #936cdd) {
+    @include flexCenter;
+    width: $width;
+    height: $height;
+    border-radius: 8px;
+    color: #fff;
+    line-height: 1.66;
+    background-color: $background;
+    font: {
+        size: 1.8rem;
+        weight: 600;
+    }
+}
