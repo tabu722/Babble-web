@@ -1,0 +1,152 @@
+@use "../common";
+
+.listen {
+	text-align: center;
+	margin-top: 160px;
+
+	&__heading {
+		@include common.heading-2;
+		display: inline-block;
+	}
+
+	&__icon {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: -5px;
+		width: 193px;
+		height: 23px;
+	}
+
+	&__desc {
+		margin-top: 18px;
+		width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+		@include common.desc-2;
+	}
+}
+
+.listen-body {
+	display: grid;
+	grid-template-areas:
+		"item1 item2 item2 item3"
+		"item1 item4 item5 item5";
+	margin-top: 70px;
+	gap: 30px 15px;
+
+	&__box {
+		width: 100%;
+		position: relative;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	&__img--1,
+	&__img--2,
+	&__img--3,
+	&__img--4,
+	&__img--5 {
+		display: block;
+		border-radius: 8px;
+	}
+
+	&__img--1 {
+		width: 100%;
+		height: 600px;
+	}
+
+	&__img--5,
+	&__img--2 {
+		width: 100%;
+	}
+
+	&__img--4,
+	&__img--3 {
+		width: 100%;
+	}
+
+	&__blur {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 86px;
+		background-color: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+	}
+
+	&__wrap {
+		padding: 16px 24px;
+		position: absolute;
+		left: 0;
+	}
+
+	&__name {
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+		color: #fff;
+		line-height: 1.66;
+		font : {
+			size: 1.8rem;
+			weight: 600;
+		}
+	}
+
+	&__icon {
+		margin-top: 2px;
+	}
+
+	&__desc {
+		color: #fff;
+		line-height: 1.71;
+		font: {
+			size: 1.4rem;
+			weight: 400;
+		}
+	}
+}
+.listen-item__1 {
+	width: 370px;
+	grid-area: item1;
+}
+
+.listen-item__2 {
+	grid-area: item2;
+	width: 470px;
+	height: 285px;
+}
+
+.listen-item__3 {
+	grid-area: item3;
+	width: 270px;
+	height: 285px;
+}
+
+.listen-item__4 {
+	grid-area: item4;
+	width: 270px;
+	height: 285px;
+}
+
+.listen-item__5 {
+	grid-area: item5;
+	width: 470px;
+	height: 285px;
+}
+
+.listen-action {
+	@include common.flexCenter;
+	margin-top: 72px;
+
+	.listen-btn {
+		@include common.clickBtn($background: #201830);
+
+		&:hover {
+			color: #201830;
+			border: 1px solid currentColor;
+			background: #fff;
+		}
+	}
+}

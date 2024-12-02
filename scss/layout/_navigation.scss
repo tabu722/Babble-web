@@ -1,72 +1,69 @@
 @use "../common";
+@use "../abstracts";
 
 .nav__inner {
-    background: #fff8f3;
+	background: abstracts.$colorWhite;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 42px 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 42px 0 30px;
 
-    .nav-list {
-        display: flex;
+	.nav-list {
+		display: flex;
 
-        &__items {
-            &:hover {
-                color: #201830;
-                text-shadow: 1px 0 0 currentColor;
-            }
+		&__items {
+			&:hover {
+				color: #201830;
+				text-shadow: 1px 0 0 currentColor;
+			}
 
-            @include common.flexCenter;
-            padding: 10px 24px;
-            color: #665f73;
-            font: {
-                size: 1.6rem;
-                weight: 400;
-            }
-            line-height: 1.75;
-            transition: 0.25s;
-        }
+			@include common.flexCenter;
+			padding: 10px 24px;
+			color: #665f73;
+			font: {
+				size: 1.6rem;
+				weight: 400;
+			}
+			line-height: 1.75;
+			transition: 0.25s;
+		}
 
-        &__icon {
-            margin: 6px 0 0 7px;
-        }
-    }
+		&__icon {
+			margin: 6px 0 0 7px;
+		}
+	}
 
-    &__action {
-        display: flex;
-        align-items: center;
-        column-gap: 28px;
-    }
+	&__action {
+		display: flex;
+		align-items: center;
+		column-gap: 28px;
+	}
 
-    &__link {
-        &:hover {
-            text-decoration: underline;
-        }
+	&__link {
+		&:hover {
+			text-decoration: underline;
+		}
 
-        color: #201830;
-        line-height: 1.75;
-        font: {
-            size: 1.6rem;
-            weight: 600;
-        }
-    }
+		color: #201830;
+		line-height: 1.75;
+		font: {
+			size: 1.6rem;
+			weight: 600;
+		}
+	}
 
-    &__btn {
-        @include common.clickBtn(
-            $width: 116px,
-            $height: 48px,
-            $background: #201830
-        );
-        font-size: 1.6rem;
-        line-height: 1.75;
+	&__btn {
+		@include common.clickBtn(116px, 48px, #201830);
+		font-size: 1.6rem;
+		line-height: 1.75;
 
-        &:hover {
-            color: #201830;
-            border-color: currentColor;
-        }
-        transition: 0.5s;
-    }
+		&:hover {
+			color: #201830;
+			border-color: currentColor;
+		}
+		transition: 0.5s;
+	}
 }

@@ -1,19 +1,70 @@
 @mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin clickBtn($width: 157px, $height: 64px, $background: #936cdd) {
-    @include flexCenter;
-    width: $width;
-    height: $height;
-    border-radius: 8px;
-    color: #fff;
-    line-height: 1.66;
-    background-color: $background;
-    font: {
-        size: 1.8rem;
-        weight: 600;
-    }
+	@include flexCenter;
+	width: $width;
+	height: $height;
+	border-radius: 8px;
+	color: #fff;
+	line-height: 1.66;
+	background-color: $background;
+	font: {
+		size: 1.8rem;
+		weight: 600;
+	}
+}
+
+@mixin heading-1 {
+	color: #201830;
+	line-height: 1.14;
+	font : {
+		size: 7rem;
+		weight: 700;
+	}
+}
+
+@mixin heading-2 {
+	color: #201830;
+	line-height: 1.23;
+	font : {
+		size: 4.2rem;
+		weight: 700;
+	}
+}
+
+@mixin heading-3 {
+	color: #201830;
+	line-height: 1.5;
+	font : {
+		size: 2rem;
+		weight: 700;
+	}
+}
+
+@mixin desc-1 {
+	line-height: 1.66;
+	font : {
+		size: 1.8rem;
+		weight: 400;
+	}
+}
+
+@mixin desc-2 {
+	line-height: 1.75;
+	font : {
+		size: 1.6rem;
+		weight: 400;
+	}
+}
+
+@mixin desc-3 {
+	line-height: 1.71;
+	font : {
+		size: 1.4rem;
+		weight: 400;
+	}
 }

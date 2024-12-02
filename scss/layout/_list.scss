@@ -1,0 +1,90 @@
+@use "../common";
+
+.list-podcast {
+	margin-top: 160px;
+}
+
+.list-content {
+	margin-top: 45px;
+	width: 470px;
+	&__heading {
+		@include common.heading-2;
+	}
+
+	&__desc {
+		@include common.desc-2;
+		margin-top: 18px;
+		color: #665f73;
+	}
+
+	&__btn {
+		margin-top: 38px;
+	}
+
+	&__icon {
+		margin: 4px 0 0 8px;
+	}
+}
+
+.list__icon {
+	position: absolute;
+	bottom: -6px;
+	right: 60px;
+	z-index: -1;
+	width: 236px;
+	height: 30px;
+}
+
+.list-media {
+	position: relative;
+	height: 400px;
+	background-color: #fff;
+
+	&__blur {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 287px;
+		height: 287px;
+	}
+
+	&__img--1,
+	&__img--2,
+	&__img--3,
+	&__img--4,
+	&__img--5 {
+		position: absolute;
+	}
+	&__img--1 {
+		top: 0;
+		left: 185px;
+		width: 148px;
+		height: 148px;
+	}
+
+	&__img--2 {
+		top: 60px;
+		right: 0;
+	}
+
+	&__img--3 {
+		width: 138px;
+		height: 138px;
+		right: 48px;
+		bottom: 40px;
+	}
+
+	&__img--4 {
+		width: 126px;
+		height: 126px;
+		left: 170px;
+		bottom: 0;
+	}
+
+	&__img--5 {
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
