@@ -1,0 +1,66 @@
+@use "../common";
+.review {
+    margin-top: 168px;
+    position: relative;
+
+    &__media {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img--1 {
+        width: 270px;
+        height: 284px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    &__img--2 {
+        position: relative;
+        z-index: -1;
+        margin-left: -65px;
+        width: 370px;
+        height: 444px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    &__dots {
+        position: absolute;
+        bottom: 0;
+        left: 160px;
+    }
+}
+
+.review {
+    &__content {
+        margin: 48px 0 0 130px;
+    }
+
+    &__heading {
+        @include common.heading-2;
+        width: 470px;
+        margin-top: 18px;
+    }
+
+    &-icon__heading {
+        position: absolute;
+        z-index: -1;
+        right: 100px;
+        top: 30px;
+    }
+
+    &__desc {
+        @include common.desc-2;
+        width: 470px;
+        margin-top: 38px;
+        color: #665f73;
+    }
+
+    &__name {
+        @include common.desc-3;
+        display: inline-block;
+        color: #aba6b5;
+        margin-top: 18px;
+    }
+}

@@ -1436,29 +1436,23 @@ button {
 
 .listen-body {
   display: grid;
-  grid-template-areas: "item1 item2 item2 item3" "item1 item4 item5 item5";
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 28.5rem 28.5rem;
+  grid-template-areas: ". . ." ". . .";
   margin-top: 70px;
-  gap: 30px 15px;
+  row-gap: 30px;
 }
 .listen-body__box {
-  width: 100%;
+  height: 100%;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
-.listen-body__img--1, .listen-body__img--2, .listen-body__img--3, .listen-body__img--4, .listen-body__img--5 {
+.listen-body__img {
+  width: 100%;
+  height: 100%;
   display: block;
   border-radius: 8px;
-}
-.listen-body__img--1 {
-  width: 100%;
-  height: 600px;
-}
-.listen-body__img--5, .listen-body__img--2 {
-  width: 100%;
-}
-.listen-body__img--4, .listen-body__img--3 {
-  width: 100%;
 }
 .listen-body__blur {
   position: absolute;
@@ -1494,32 +1488,24 @@ button {
 }
 
 .listen-item__1 {
-  width: 370px;
-  grid-area: item1;
+  grid-column: span 4;
+  grid-row: span 2;
 }
 
 .listen-item__2 {
-  grid-area: item2;
-  width: 470px;
-  height: 285px;
+  grid-column: span 5;
 }
 
 .listen-item__3 {
-  grid-area: item3;
-  width: 270px;
-  height: 285px;
+  grid-column: span 3;
 }
 
 .listen-item__4 {
-  grid-area: item4;
-  width: 270px;
-  height: 285px;
+  grid-column: span 3;
 }
 
 .listen-item__5 {
-  grid-area: item5;
-  width: 470px;
-  height: 285px;
+  grid-column: span 5;
 }
 
 .listen-action {
@@ -1611,6 +1597,191 @@ button {
 .header__btn:hover {
   color: #201830;
   border-color: currentColor;
+}
+
+.popular {
+  margin-top: 160px;
+  padding: 100px 0;
+  background: #fff8f3;
+}
+.popular__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular__heading {
+  color: #201830;
+  line-height: 1.23;
+  font-size: 4.2rem;
+  font-weight: 700;
+  width: 390px;
+}
+.popular__icon {
+  position: absolute;
+  z-index: -1;
+  top: 38px;
+  right: 42px;
+}
+.popular__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  height: 64px;
+  border-radius: 8px;
+  color: #fff;
+  line-height: 1.66;
+  background-color: #201830;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.popular__btn:hover {
+  color: #201830;
+  border-color: currentColor;
+}
+
+.popular-list {
+  margin-top: 84px;
+}
+
+.popular-items {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.popular-items__img {
+  width: 270px;
+  height: 286px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.popular-items__content {
+  width: 270px;
+}
+.popular-items__time {
+  line-height: 1.71;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fd6f1f;
+}
+.popular-items__heading {
+  color: #201830;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 6px;
+}
+.popular-items__desc {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 18px;
+  color: #665f73;
+}
+.popular-items__action {
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+.popular-items__link {
+  display: inline-block;
+  color: #201830;
+  line-height: 1.71;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: 0.25s;
+}
+.popular-items__icon {
+  color: #201830;
+  transition: 0.25s;
+}
+
+.popular-items__action:hover > * {
+  color: #936cdd;
+}
+
+.dots {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+.dots .dot {
+  width: 8px;
+  height: 8px;
+  background: #d8d5de;
+  border-radius: 50%;
+}
+.dots .dot-active {
+  width: 12px;
+  height: 12px;
+  background: #936cdd;
+}
+
+.review {
+  margin-top: 168px;
+  position: relative;
+}
+.review__media {
+  display: flex;
+  align-items: center;
+}
+.review__img--1 {
+  width: 270px;
+  height: 284px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.review__img--2 {
+  position: relative;
+  z-index: -1;
+  margin-left: -65px;
+  width: 370px;
+  height: 444px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.review__dots {
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+}
+
+.review__content {
+  margin: 48px 0 0 130px;
+}
+.review__heading {
+  color: #201830;
+  line-height: 1.23;
+  font-size: 4.2rem;
+  font-weight: 700;
+  width: 470px;
+  margin-top: 18px;
+}
+.review-icon__heading {
+  position: absolute;
+  z-index: -1;
+  right: 100px;
+  top: 30px;
+}
+.review__desc {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 470px;
+  margin-top: 38px;
+  color: #665f73;
+}
+.review__name {
+  line-height: 1.71;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: inline-block;
+  color: #aba6b5;
+  margin-top: 18px;
 }
 
 .list-podcast {
