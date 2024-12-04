@@ -172,7 +172,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 157px;
+  min-width: 157px;
   height: 64px;
   border-radius: 8px;
   color: #fff;
@@ -1230,6 +1230,71 @@ button {
     --grid-gutter-y: 90px;
   }
 }
+.footer {
+  padding: 104px 0 38px;
+  background-color: #fff8f3;
+}
+.footer__social {
+  margin-right: 106px;
+}
+.footer__inner {
+  display: flex;
+}
+.footer__copyright {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 14px;
+  width: 270px;
+  color: #665f73;
+}
+.footer__row {
+  display: flex;
+  column-gap: 14px;
+  margin-top: 18px;
+}
+.footer__icon {
+  color: #201830;
+  transition: 0.25s;
+}
+.footer__icon:hover {
+  color: #936cdd;
+}
+.footer__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-item:first-child {
+  margin-top: 24px;
+}
+.footer-item__heading {
+  color: #201830;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer-item__link {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 16px;
+  color: #665f73;
+}
+.footer-item__link:hover {
+  text-decoration: underline;
+}
+.footer-item__social {
+  margin-top: 24px;
+  display: flex;
+  column-gap: 16px;
+}
+.footer-item__icon {
+  width: 36px;
+  height: 36px;
+}
+
 .hero {
   padding: 80px 0 140px;
   background: #fff8f3;
@@ -1518,7 +1583,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 157px;
+  min-width: 157px;
   height: 64px;
   border-radius: 8px;
   color: #fff;
@@ -1535,6 +1600,11 @@ button {
 
 .nav__inner {
   background: #fff8f3;
+}
+
+.nav-list__items:hover .nav-list__icon {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header {
@@ -1562,7 +1632,10 @@ button {
   text-shadow: 1px 0 0 currentColor;
 }
 .header .nav-list__icon {
+  opacity: 0;
+  visibility: hidden;
   margin: 6px 0 0 7px;
+  transition: 0.25s;
 }
 .header__action {
   display: flex;
@@ -1582,7 +1655,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 116px;
+  min-width: 116px;
   height: 48px;
   border-radius: 8px;
   color: #fff;
@@ -1626,7 +1699,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 157px;
+  min-width: 157px;
   height: 64px;
   border-radius: 8px;
   color: #fff;
@@ -1784,32 +1857,119 @@ button {
   margin-top: 18px;
 }
 
+.subscribe {
+  margin-top: 160px;
+}
+.subscribe__inner {
+  position: relative;
+  padding: 100px;
+  border-radius: 12px;
+  background: #201830;
+}
+.subscribe__row {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.subscribe__heading {
+  color: #201830;
+  line-height: 1.23;
+  font-size: 4.2rem;
+  font-weight: 700;
+  width: 470px;
+  color: #fff;
+}
+.subscribe__icon {
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+}
+.subscribe__desc {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 470px;
+  color: #aba6b5;
+}
+
+.subscribe-form {
+  margin-top: 70px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.subscribe-text,
+.subscribe-email {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 370px;
+  padding: 18px 28px;
+  border-radius: 8px;
+  background: #2b213f;
+  color: #aba6b5;
+}
+
+.subscribe-text::placeholder,
+.subscribe-email::placeholder {
+  line-height: 1.75;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #aba6b5;
+}
+
+.subscribe-icon__1,
+.subscribe-icon__2,
+.subscribe-icon__3 {
+  position: absolute;
+}
+
+.subscribe-icon__1 {
+  top: 26px;
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.subscribe-icon__2 {
+  top: 180px;
+  right: 27px;
+}
+
+.subscribe-icon__3 {
+  bottom: 45px;
+  left: 35px;
+}
+
 .list-podcast {
   margin-top: 160px;
 }
 
 .list-content {
   margin-top: 45px;
-  width: 470px;
 }
 .list-content__heading {
   color: #201830;
   line-height: 1.23;
   font-size: 4.2rem;
   font-weight: 700;
+  width: 470px;
 }
 .list-content__desc {
   line-height: 1.75;
   font-size: 1.6rem;
   font-weight: 400;
+  width: 470px;
   margin-top: 18px;
   color: #665f73;
 }
 .list-content__btn {
+  width: 157px;
   margin-top: 38px;
 }
 .list-content__icon {
   margin: 4px 0 0 8px;
+  color: #fff;
 }
 
 .list__icon {

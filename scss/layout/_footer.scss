@@ -1,0 +1,75 @@
+@use "../common";
+@use "../abstracts";
+.footer {
+    padding: 104px 0 38px;
+    background-color: abstracts.$colorWhite;
+
+    &__social {
+        margin-right: 106px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__copyright {
+        @include common.desc-2;
+
+        margin-top: 14px;
+        width: 270px;
+        color: #665f73;
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 14px;
+        margin-top: 18px;
+    }
+
+    &__icon {
+        color: #201830;
+        transition: 0.25s;
+
+        &:hover {
+            color: abstracts.$colorPurple;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-item {
+    &:first-child {
+        margin-top: 24px;
+    }
+
+    &__heading {
+        @include common.heading-3;
+    }
+
+    &__link {
+        @include common.desc-2;
+
+        display: inline-block;
+        margin-top: 16px;
+        color: #665f73;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__social {
+        margin-top: 24px;
+        display: flex;
+        column-gap: 16px;
+    }
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+    }
+}

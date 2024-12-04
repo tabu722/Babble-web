@@ -1,0 +1,83 @@
+@use "../common";
+
+.subscribe {
+    margin-top: 160px;
+
+    &__inner {
+        position: relative;
+        padding: 100px;
+        border-radius: 12px;
+        background: #201830;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    &__heading {
+        @include common.heading-2;
+
+        width: 470px;
+        color: #fff;
+    }
+
+    &__icon {
+        position: absolute;
+        z-index: -1;
+        bottom: -4px;
+        left: 0;
+    }
+
+    &__desc {
+        @include common.desc-2;
+
+        width: 470px;
+        color: #aba6b5;
+    }
+}
+
+.subscribe-form {
+    margin-top: 70px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.subscribe-text,
+.subscribe-email {
+    @include common.desc-2;
+    width: 370px;
+    padding: 18px 28px;
+    border-radius: 8px;
+    background: #2b213f;
+    color: #aba6b5;
+}
+
+.subscribe-text::placeholder,
+.subscribe-email::placeholder {
+    @include common.desc-2;
+    color: #aba6b5;
+}
+
+.subscribe-icon__1,
+.subscribe-icon__2,
+.subscribe-icon__3 {
+    position: absolute;
+}
+
+.subscribe-icon__1 {
+    top: 26px;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.subscribe-icon__2 {
+    top: 180px;
+    right: 27px;
+}
+
+.subscribe-icon__3 {
+    bottom: 45px;
+    left: 35px;
+}
