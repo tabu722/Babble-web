@@ -87,6 +87,16 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Main CSS -->
         <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
@@ -96,7 +106,7 @@
             <div class="container">
                 <header class="header">
                     <!-- Logo -->
-                    <a href="#!" class="header__logo">
+                    <a href="#" class="header__logo">
                         <img
                             src="./assets/img/Logo.svg"
                             alt="Babble"
@@ -108,7 +118,7 @@
                     <nav class="header__nav">
                         <ul class="nav-list">
                             <li>
-                                <a href="#!" class="nav-list__items"
+                                <a href="#popular" class="nav-list__items"
                                     >Episodes
                                     <img
                                         src="./assets/img/arrow-down.svg"
@@ -118,7 +128,7 @@
                             </li>
 
                             <li>
-                                <a href="#!" class="nav-list__items"
+                                <a href="#list" class="nav-list__items"
                                     >Trending
                                     <img
                                         src="./assets/img/arrow-down.svg"
@@ -128,7 +138,7 @@
                             </li>
 
                             <li>
-                                <a href="#!" class="nav-list__items"
+                                <a href="#listen" class="nav-list__items"
                                     >Category
                                     <img
                                         src="./assets/img/arrow-down.svg"
@@ -139,7 +149,7 @@
                             </li>
 
                             <li>
-                                <a href="#!" class="nav-list__items"
+                                <a href="#review" class="nav-list__items"
                                     >Blog
                                     <img
                                         src="./assets/img/arrow-down.svg"
@@ -171,7 +181,9 @@
                                 <div class="hero-media">
                                     <!-- Media One -->
                                     <div class="hero-media__one">
-                                        <div class="hero-media__top">
+                                        <div
+                                            class="hero-media__top animate__animated animate__slideInLeft wow"
+                                        >
                                             <img
                                                 src="./assets/img/hero-media-one.png"
                                                 alt=""
@@ -252,7 +264,9 @@
                                             />
                                         </div>
 
-                                        <figure class="hero-thumb">
+                                        <figure
+                                            class="hero-thumb animate__animated animate__slideInRight wow"
+                                        >
                                             <img
                                                 src="./assets/img/hero-media-two.png"
                                                 alt=""
@@ -306,9 +320,14 @@
             </section>
 
             <!-- List Podcast -->
-            <div class="container">
+            <div
+                class="container"
+                id="list"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            >
                 <section class="list-podcast">
-                    <div class="row">
+                    <div class="row list__row">
                         <div class="col-xl-6">
                             <!-- List Content -->
                             <section class="list-content">
@@ -401,9 +420,11 @@
             </div>
 
             <!-- Listen -->
-            <div class="container">
+            <div class="container" id="listen">
                 <section class="listen">
-                    <h2 class="sub-heading listen__heading">
+                    <h2
+                        class="sub-heading listen__heading animate__animated animate__flipInX wow"
+                    >
                         Listen by category
                         <img
                             src="./assets/img/heading.svg"
@@ -419,7 +440,12 @@
 
                     <div class="row listen-body">
                         <!-- Box 1 -->
-                        <div class="col listen-item__1">
+                        <div
+                            class="col listen-item__1"
+                            data-aos="flip-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <article class="listen-body__box">
                                 <img
                                     src="./assets/img/listen-box-1.png"
@@ -446,7 +472,12 @@
                         </div>
 
                         <!-- Box 2 -->
-                        <div class="col listen-item__2">
+                        <div
+                            class="col listen-item__2"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <article class="listen-body__box">
                                 <img
                                     src="./assets/img/listen-box-2.png"
@@ -473,7 +504,12 @@
                         </div>
 
                         <!-- Box 3 -->
-                        <div class="col listen-item__3">
+                        <div
+                            class="col listen-item__3"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <article class="listen-body__box">
                                 <img
                                     src="./assets/img/listen-box-3.png"
@@ -498,8 +534,14 @@
                                 </div>
                             </article>
                         </div>
+
                         <!-- Box 4 -->
-                        <div class="col listen-item__4">
+                        <div
+                            class="col listen-item__4"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <article class="listen-body__box">
                                 <img
                                     src="./assets/img/listen-box-4.png"
@@ -526,7 +568,12 @@
                         </div>
 
                         <!-- Box 5 -->
-                        <div class="col listen-item__5">
+                        <div
+                            class="col listen-item__5"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <article class="listen-body__box">
                                 <img
                                     src="./assets/img/listen-box-5.png"
@@ -560,7 +607,13 @@
             </div>
 
             <!-- Popular -->
-            <section class="popular">
+            <section
+                class="popular"
+                id="popular"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="1500"
+            >
                 <div class="container">
                     <div class="popular__row">
                         <h2 class="sub-heading popular__heading">
@@ -816,7 +869,7 @@
             </section>
 
             <!-- Review -->
-            <section class="review">
+            <section class="review" id="review">
                 <div class="container">
                     <div class="review__inner">
                         <div class="row">
@@ -874,6 +927,11 @@
                         </div>
                     </div>
                 </div>
+                <img
+                    src="./assets/img/review-blur.svg"
+                    alt=""
+                    class="review__icon--blur"
+                />
             </section>
 
             <!-- Subscribe -->
@@ -951,12 +1009,13 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <!-- Footer Social -->
                     <div class="footer__social">
-                        <a href="#!">
+                        <a href="#">
                             <img
                                 src="./assets/img/Logo.svg"
                                 alt=""
@@ -1158,5 +1217,18 @@
                 </div>
             </div>
         </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            new WOW().init();
+            AOS.init();
+        </script>
     </body>
 </html>

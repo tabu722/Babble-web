@@ -1,0 +1,136 @@
+/* Pc */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet/ Mobile */
+@media screen and (max-width: 991.98px) {
+    .header {
+        .nav-list__items {
+            padding: 10px 5px;
+        }
+    }
+
+    .hero {
+        padding-top: 42px;
+
+        &-content {
+            text-align: center;
+
+            margin-left: 0;
+        }
+
+        &-heading {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        &-desc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-action {
+            justify-content: center;
+        }
+    }
+
+    .sub-heading .heading__icon {
+        bottom: -10px;
+    }
+
+    .list-podcast {
+        margin-top: 100px;
+    }
+
+    .list__row {
+        flex-direction: column-reverse;
+    }
+
+    .list-content {
+        text-align: center;
+
+        &__heading {
+            width: 100%;
+        }
+
+        &__btn,
+        &__desc {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .list__icon {
+        right: 220px;
+    }
+
+    .listen-body {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .listen-item__1 {
+        grid-column: span 5;
+    }
+
+    .listen-item__5,
+    .listen-item__2 {
+        grid-column: span 3;
+    }
+
+    .listen-item__4,
+    .listen-item__3 {
+        grid-column: span 2;
+    }
+
+    .review {
+        margin-top: 100px;
+
+        &__content {
+            width: 100%;
+            margin: 0;
+        }
+
+        &__media {
+            margin-top: 40px;
+        }
+    }
+
+    .review__inner > .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .subscribe {
+        &__row {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+
+        &-form {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__body {
+            margin-top: 40px;
+        }
+    }
+
+    .footer-item__social {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Pc */
+@media screen and (max-width: 576px) {
+}

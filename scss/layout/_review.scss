@@ -3,6 +3,10 @@
     margin-top: 168px;
     position: relative;
 
+    &__inner {
+        position: relative;
+    }
+
     &__media {
         display: flex;
         align-items: center;
@@ -28,12 +32,13 @@
     &__dots {
         position: absolute;
         bottom: 0;
-        left: 160px;
+        left: 74px;
     }
 }
 
 .review {
     &__content {
+        position: relative;
         margin: 48px 0 0 130px;
     }
 
@@ -62,5 +67,14 @@
         display: inline-block;
         color: #aba6b5;
         margin-top: 18px;
+    }
+
+    &__icon--blur {
+        position: absolute;
+        z-index: -1;
+        height: 452px;
+        right: 0;
+        top: 0;
+        pointer-events: none;
     }
 }

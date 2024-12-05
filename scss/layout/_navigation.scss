@@ -2,6 +2,9 @@
 @use "../abstracts";
 
 .nav__inner {
+    position: sticky;
+    top: -24px;
+    z-index: 99;
     background: abstracts.$colorWhite;
 }
 
@@ -40,7 +43,7 @@
             opacity: 0;
             visibility: hidden;
             margin: 6px 0 0 7px;
-            transition: 0.25s;
+            transition: 0.25;
         }
     }
 
