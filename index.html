@@ -115,7 +115,7 @@
                     </a>
 
                     <!-- Navigation -->
-                    <nav class="header__nav">
+                    <nav class="header__nav" id="nav-pc">
                         <ul class="nav-list">
                             <li>
                                 <a href="#popular" class="nav-list__items"
@@ -158,6 +158,13 @@
                                     />
                                 </a>
                             </li>
+
+                            <li class="items-pc">
+                                <a href="#!" class="nav-list__items">Sign in</a>
+                            </li>
+                            <li class="items-pc">
+                                <a href="#!" class="nav-list__items">Sign up</a>
+                            </li>
                         </ul>
                     </nav>
 
@@ -166,9 +173,51 @@
                         <a href="#!" class="header__link">Log in</a>
                         <a href="#!" class="header__btn btn">Sign up</a>
                     </div>
+
+                    <label for="menu-checkbox" class="header-menu">
+                        <img
+                            src="./assets/img/Menu.svg"
+                            alt=""
+                            class="header-menu__icon"
+                        />
+                    </label>
                 </header>
             </div>
         </div>
+
+        <!-- Menu -->
+        <header class="menu">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="overlay"></label>
+
+            <!-- Drawer -->
+            <div class="drawer">
+                <!-- Logo -->
+                <a href="#" class="header__logo">
+                    <img
+                        src="./assets/img/Logo.svg"
+                        alt="Babble"
+                        class="header__img"
+                    />
+                </a>
+
+                <!-- Navigation -->
+                <nav class="header__nav" id="nav-mobile"></nav>
+                <script>
+                    const navPc = document.querySelector("#nav-pc");
+                    const navMobile = document.querySelector("#nav-mobile");
+
+                    navMobile.innerHTML = navPc.innerHTML;
+                </script>
+            </div>
+        </header>
 
         <main>
             <!-- Hero -->
@@ -177,7 +226,7 @@
                     <div class="hero__inner">
                         <div class="row">
                             <!-- Hero Media -->
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-12">
                                 <div class="hero-media">
                                     <!-- Media One -->
                                     <div class="hero-media__one">
@@ -284,7 +333,7 @@
                             </div>
 
                             <!-- Hero Content -->
-                            <div class="col-xl-5">
+                            <div class="col-xl-5 col-12">
                                 <section class="hero-content">
                                     <h1 class="sub-heading hero-heading">
                                         A new era of podcasting for you
@@ -328,7 +377,7 @@
             >
                 <section class="list-podcast">
                     <div class="row list__row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-12">
                             <!-- List Content -->
                             <section class="list-content">
                                 <h2 class="sub-heading list-content__heading">
@@ -371,7 +420,7 @@
                         </div>
 
                         <!-- List Media -->
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-12">
                             <div class="list-media">
                                 <img
                                     src="./assets/img/list-blur.svg"
@@ -441,7 +490,7 @@
                     <div class="row listen-body">
                         <!-- Box 1 -->
                         <div
-                            class="col listen-item__1"
+                            class="col-md-12 col-12 listen-item__1"
                             data-aos="flip-down"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -473,7 +522,7 @@
 
                         <!-- Box 2 -->
                         <div
-                            class="col listen-item__2"
+                            class="col-xl-12 col-12 listen-item__2"
                             data-aos="flip-up"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -505,7 +554,7 @@
 
                         <!-- Box 3 -->
                         <div
-                            class="col listen-item__3"
+                            class="col-xl-12 col-9 listen-item__3"
                             data-aos="flip-up"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -537,7 +586,7 @@
 
                         <!-- Box 4 -->
                         <div
-                            class="col listen-item__4"
+                            class="col-xl-12 col-9 listen-item__4"
                             data-aos="flip-up"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -569,7 +618,7 @@
 
                         <!-- Box 5 -->
                         <div
-                            class="col listen-item__5"
+                            class="col-xl-12 col-12 listen-item__5"
                             data-aos="flip-up"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -689,7 +738,9 @@
 
                             <!-- Popular Items 2 -->
                             <div class="col">
-                                <article class="popular-items">
+                                <article
+                                    class="popular-items popular-items__active"
+                                >
                                     <img
                                         src="./assets/img/popular-item-2.png"
                                         alt=""
@@ -746,7 +797,9 @@
 
                             <!-- Popular Items 3 -->
                             <div class="col">
-                                <article class="popular-items">
+                                <article
+                                    class="popular-items popular-items__active"
+                                >
                                     <div class="popular-items__content">
                                         <p class="popular-items__time">
                                             Episode3 - 1hr 25min
@@ -803,7 +856,9 @@
 
                             <!-- Popular Items 4 -->
                             <div class="col">
-                                <article class="popular-items">
+                                <article
+                                    class="popular-items popular-items__active"
+                                >
                                     <div class="popular-items__content">
                                         <p class="popular-items__time">
                                             Episode3 - 1hr 25min
@@ -865,6 +920,10 @@
                         <div class="dot"></div>
                         <div class="dot"></div>
                     </div>
+
+                    <a href="#!" class="btn popular__btn btn__mobile"
+                        >All episodes</a
+                    >
                 </div>
             </section>
 
@@ -873,7 +932,7 @@
                 <div class="container">
                     <div class="review__inner">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-12">
                                 <div class="review__media">
                                     <img
                                         src="./assets/img/review-img-1.png"
@@ -893,7 +952,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 col-12">
                                 <section class="review__content">
                                     <img
                                         src="./assets/img/review-icon.svg"
@@ -936,7 +995,7 @@
 
             <!-- Subscribe -->
             <section class="subscribe">
-                <div class="container">
+                <div class="container subscribe__container">
                     <div class="subscribe__inner">
                         <div class="subscribe__row">
                             <h2 class="sub-heading subscribe__heading">
@@ -992,17 +1051,17 @@
                         <img
                             src="./assets/img/subscribe-icon-1.svg"
                             alt=""
-                            class="subscribe-icon__1"
+                            class="subscribe-icon__1 subscribe-icon__1--mobile"
                         />
                         <img
                             src="./assets/img/subscribe-icon-2.svg"
                             alt=""
-                            class="subscribe-icon__2"
+                            class="subscribe-icon__2 subscribe-icon__2--mobile"
                         />
                         <img
                             src="./assets/img/subscribe-icon-3.svg"
                             alt=""
-                            class="subscribe-icon__3"
+                            class="subscribe-icon__3 subscribe-icon__3--mobile"
                         />
                     </div>
                 </div>
