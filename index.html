@@ -1,1293 +1,1275 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Babble</title>
-
-        <!-- Font  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-            rel="stylesheet"
-        />
-
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
-        <link
-            rel="apple-touch-icon"
-            sizes="60x60"
-            href="./assets/favicon/apple-icon-60x60.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="72x72"
-            href="./assets/favicon/apple-icon-72x72.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="./assets/favicon/apple-icon-76x76.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="114x114"
-            href="./assets/favicon/apple-icon-114x114.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="120x120"
-            href="./assets/favicon/apple-icon-120x120.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="144x144"
-            href="./assets/favicon/apple-icon-144x144.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="152x152"
-            href="./assets/favicon/apple-icon-152x152.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-icon-180x180.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-            href="./assets/favicon/android-icon-192x192.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="96x96"
-            href="./assets/favicon/favicon-96x96.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./assets/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="./assets/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-            name="msapplication-TileImage"
-            content="./assets/favicon/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#ffffff" />
-
-        <!-- Animation -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
-
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="./assets/css/main.css" />
-    </head>
-    <body>
-        <!-- Header Navigation -->
-        <div class="nav__inner">
-            <div class="container">
-                <header class="header">
-                    <!-- Logo -->
-                    <a href="#" class="header__logo">
-                        <img
-                            src="./assets/img/Logo.svg"
-                            alt="Babble"
-                            class="header__img"
-                        />
-                    </a>
-
-                    <!-- Navigation -->
-                    <nav class="header__nav" id="nav-pc">
-                        <ul class="nav-list">
-                            <li>
-                                <a href="#popular" class="nav-list__items"
-                                    >Episodes
-                                    <img
-                                        src="./assets/img/arrow-down.svg"
-                                        alt=""
-                                        class="nav-list__icon"
-                                /></a>
-                            </li>
-
-                            <li>
-                                <a href="#list" class="nav-list__items"
-                                    >Trending
-                                    <img
-                                        src="./assets/img/arrow-down.svg"
-                                        alt=""
-                                        class="nav-list__icon"
-                                /></a>
-                            </li>
-
-                            <li>
-                                <a href="#listen" class="nav-list__items"
-                                    >Category
-                                    <img
-                                        src="./assets/img/arrow-down.svg"
-                                        alt=""
-                                        class="nav-list__icon"
-                                    />
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#review" class="nav-list__items"
-                                    >Blog
-                                    <img
-                                        src="./assets/img/arrow-down.svg"
-                                        alt=""
-                                        class="nav-list__icon"
-                                    />
-                                </a>
-                            </li>
-
-                            <li class="items-pc">
-                                <a href="#!" class="nav-list__items">Sign in</a>
-                            </li>
-                            <li class="items-pc">
-                                <a href="#!" class="nav-list__items">Sign up</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <!-- Action -->
-                    <div class="header__action">
-                        <a href="#!" class="header__link">Log in</a>
-                        <a href="#!" class="header__btn btn">Sign up</a>
-                    </div>
-
-                    <label for="menu-checkbox" class="header-menu">
-                        <img
-                            src="./assets/img/Menu.svg"
-                            alt=""
-                            class="header-menu__icon"
-                        />
-                    </label>
-                </header>
-            </div>
-        </div>
-
-        <!-- Menu -->
-        <header class="menu">
-            <input
-                type="checkbox"
-                name=""
-                id="menu-checkbox"
-                class="menu-checkbox"
-                hidden
-            />
-            <!-- Overlay -->
-            <label for="menu-checkbox" class="overlay"></label>
-
-            <!-- Drawer -->
-            <div class="drawer">
-                <!-- Logo -->
-                <a href="#" class="header__logo">
-                    <img
-                        src="./assets/img/Logo.svg"
-                        alt="Babble"
-                        class="header__img"
-                    />
-                </a>
-
-                <!-- Navigation -->
-                <nav class="header__nav" id="nav-mobile"></nav>
-                <script>
-                    const navPc = document.querySelector("#nav-pc");
-                    const navMobile = document.querySelector("#nav-mobile");
-
-                    navMobile.innerHTML = navPc.innerHTML;
-                </script>
-            </div>
-        </header>
-
-        <main>
-            <!-- Hero -->
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__inner">
-                        <div class="row">
-                            <!-- Hero Media -->
-                            <div class="col-xl-6 col-12">
-                                <div class="hero-media">
-                                    <!-- Media One -->
-                                    <div class="hero-media__one">
-                                        <div
-                                            class="hero-media__top animate__animated animate__slideInLeft wow"
-                                        >
-                                            <img
-                                                src="./assets/img/hero-media-one.png"
-                                                alt=""
-                                                class="hero-media__img"
-                                            />
-                                            <img
-                                                src="./assets/img/hero-audio.svg"
-                                                alt=""
-                                                class="hero-media__audio"
-                                            />
-                                        </div>
-
-                                        <p class="hero-media__name">
-                                            Podcast listener
-                                        </p>
-                                        <div class="hero-media__ava">
-                                            <img
-                                                src="./assets/img/z5948822015245_f979d87b6f13c15e1e519024ba1e41fe.jpg"
-                                                alt=""
-                                                class="hero-ava"
-                                            />
-                                            <img
-                                                src="./assets/img/z5948845419419_5966d94044478380bf5db64653e6d327.jpg"
-                                                alt=""
-                                                class="hero-ava"
-                                            />
-                                            <img
-                                                src="./assets/img/z5948858632150_f88ff7ec1c2581b5b3786acae7af1641.jpg"
-                                                alt=""
-                                                class="hero-ava"
-                                            />
-                                            <span class="hero-ava__decor"
-                                                >+50K</span
-                                            >
-                                        </div>
-                                    </div>
-
-                                    <!-- Media Two -->
-                                    <div class="hero-media__two">
-                                        <a href="#!" class="hero-media__circle">
-                                            <img
-                                                src="./assets/img/separated.svg"
-                                                alt=""
-                                                class="separated"
-                                            />
-                                            <div class="circle">
-                                                500+
-                                                <span>Podcasts</span>
-                                            </div>
-                                        </a>
-
-                                        <div class="hero-media__list">
-                                            <a href="#!">
-                                                <img
-                                                    src="./assets/img/spotify.svg"
-                                                    alt=""
-                                                    class="hero-media__item"
-                                                />
-                                            </a>
-                                            <a href="#!">
-                                                <img
-                                                    src="./assets/img/gg.svg"
-                                                    alt=""
-                                                    class="hero-media__item"
-                                                />
-                                            </a>
-                                            <a href="#!">
-                                                <img
-                                                    src="./assets/img/podcast.svg"
-                                                    alt=""
-                                                    class="hero-media__item"
-                                                />
-                                            </a>
-                                            <img
-                                                src="./assets/img/separated.svg"
-                                                alt=""
-                                                class="separated"
-                                            />
-                                        </div>
-
-                                        <figure
-                                            class="hero-thumb animate__animated animate__slideInRight wow"
-                                        >
-                                            <img
-                                                src="./assets/img/hero-media-two.png"
-                                                alt=""
-                                                class="hero-thumb__img"
-                                            />
-                                            <div class="hero-thumb__box">
-                                                <p class="hero-thumb__name">
-                                                    Sarah Taylor
-                                                    <span>Song podcaster</span>
-                                                </p>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Hero Content -->
-                            <div class="col-xl-5 col-12">
-                                <section class="hero-content">
-                                    <h1 class="sub-heading hero-heading">
-                                        A new era of podcasting for you
-                                        <img
-                                            src="./assets/img/heading.svg"
-                                            alt=""
-                                            class="heading__icon"
-                                        />
-                                    </h1>
-                                    <p class="hero-desc">
-                                        Rebuilt for simplicity and speed, so you
-                                        can spend more time discovering and
-                                        listening to great podcasts.
-                                    </p>
-
-                                    <div class="hero-action">
-                                        <a href="#!" class="hero-btn btn"
-                                            >Get Started</a
-                                        >
-                                        <a href="#!" class="hero-link"
-                                            >Listen now
-                                            <img
-                                                src="./assets/img/Play.svg"
-                                                alt=""
-                                                class="hero-link__icon"
-                                        /></a>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- List Podcast -->
-            <div
-                class="container"
-                id="list"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-            >
-                <section class="list-podcast">
-                    <div class="row list__row">
-                        <div class="col-xl-6 col-12">
-                            <!-- List Content -->
-                            <section class="list-content">
-                                <h2 class="sub-heading list-content__heading">
-                                    We are in the top podcast directories
-                                    <img
-                                        src="./assets/img/heading.svg"
-                                        alt=""
-                                        class="list__icon"
-                                    />
-                                </h2>
-                                <p class="list-content__desc">
-                                    Rebuilt for simplicity and speed, so you can
-                                    spend more time discovering and listening to
-                                    great podcasts. We are everywhere on the
-                                    internet.
-                                </p>
-                                <a href="#!" class="btn list-content__btn"
-                                    >Listen now
-                                    <svg
-                                        class="list-content__icon"
-                                        width="18"
-                                        height="18"
-                                        viewBox="0 0 18 18"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="9"
-                                            cy="9"
-                                            r="9"
-                                            fill="white"
-                                        />
-                                        <path
-                                            d="M12.85 8.9134C12.9167 8.95189 12.9167 9.04811 12.85 9.0866L7.15 12.3775C7.08333 12.416 7 12.3679 7 12.2909L7 5.7091C7 5.63212 7.08333 5.58401 7.15 5.6225L12.85 8.9134Z"
-                                            fill="#936CDD"
-                                        />
-                                    </svg>
-                                </a>
-                            </section>
-                        </div>
-
-                        <!-- List Media -->
-                        <div class="col-xl-6 col-12">
-                            <div class="list-media">
-                                <img
-                                    src="./assets/img/list-blur.svg"
-                                    alt=""
-                                    class="list-media__blur"
-                                />
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/podcast.svg"
-                                        alt=""
-                                        class="list-media__img--1"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/soundcloud.svg"
-                                        alt=""
-                                        class="list-media__img--2"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/gg.svg"
-                                        alt=""
-                                        class="list-media__img--3"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/spotify.svg"
-                                        alt=""
-                                        class="list-media__img--4"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/zing.svg"
-                                        alt=""
-                                        class="list-media__img--5"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Listen -->
-            <div class="container" id="listen">
-                <section class="listen">
-                    <h2
-                        class="sub-heading listen__heading animate__animated animate__flipInX wow"
-                    >
-                        Listen by category
-                        <img
-                            src="./assets/img/heading.svg"
-                            alt=""
-                            class="listen__icon"
-                        />
-                    </h2>
-
-                    <p class="listen__desc">
-                        Listen all kind of podcasts you like by exploring
-                        categories. Make your day even better
-                    </p>
-
-                    <div class="row listen-body">
-                        <!-- Box 1 -->
-                        <div
-                            class="col-md-12 col-12 listen-item__1"
-                            data-aos="flip-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1000"
-                        >
-                            <article class="listen-body__box">
-                                <img
-                                    src="./assets/img/listen-box-1.png"
-                                    alt=""
-                                    class="listen-body__img"
-                                />
-                                <div class="listen-body__blur">
-                                    <div class="listen-body__wrap">
-                                        <a href="#!" class="listen-body__name">
-                                            Education
-                                            <img
-                                                src="./assets/img/listen-body-icon.svg"
-                                                alt=""
-                                                class="listen-body__icon"
-                                            />
-                                        </a>
-
-                                        <p class="listen-body__desc">
-                                            120 Podcasts Channel
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <!-- Box 2 -->
-                        <div
-                            class="col-xl-12 col-12 listen-item__2"
-                            data-aos="flip-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="1000"
-                        >
-                            <article class="listen-body__box">
-                                <img
-                                    src="./assets/img/listen-box-2.png"
-                                    alt=""
-                                    class="listen-body__img"
-                                />
-                                <div class="listen-body__blur">
-                                    <div class="listen-body__wrap">
-                                        <a href="#!" class="listen-body__name">
-                                            Healthcare
-                                            <img
-                                                src="./assets/img/listen-body-icon.svg"
-                                                alt=""
-                                                class="listen-body__icon"
-                                            />
-                                        </a>
-
-                                        <p class="listen-body__desc">
-                                            120 Podcasts Channel
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <!-- Box 3 -->
-                        <div
-                            class="col-xl-12 col-9 listen-item__3"
-                            data-aos="flip-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="1000"
-                        >
-                            <article class="listen-body__box">
-                                <img
-                                    src="./assets/img/listen-box-3.png"
-                                    alt=""
-                                    class="listen-body__img"
-                                />
-                                <div class="listen-body__blur">
-                                    <div class="listen-body__wrap">
-                                        <a href="#!" class="listen-body__name">
-                                            Music
-                                            <img
-                                                src="./assets/img/listen-body-icon.svg"
-                                                alt=""
-                                                class="listen-body__icon"
-                                            />
-                                        </a>
-
-                                        <p class="listen-body__desc">
-                                            120 Podcasts Channel
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <!-- Box 4 -->
-                        <div
-                            class="col-xl-12 col-9 listen-item__4"
-                            data-aos="flip-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="1000"
-                        >
-                            <article class="listen-body__box">
-                                <img
-                                    src="./assets/img/listen-box-4.png"
-                                    alt=""
-                                    class="listen-body__img"
-                                />
-                                <div class="listen-body__blur">
-                                    <div class="listen-body__wrap">
-                                        <a href="#!" class="listen-body__name">
-                                            Fashion
-                                            <img
-                                                src="./assets/img/listen-body-icon.svg"
-                                                alt=""
-                                                class="listen-body__icon"
-                                            />
-                                        </a>
-
-                                        <p class="listen-body__desc">
-                                            120 Podcasts Channel
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                        <!-- Box 5 -->
-                        <div
-                            class="col-xl-12 col-12 listen-item__5"
-                            data-aos="flip-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="1000"
-                        >
-                            <article class="listen-body__box">
-                                <img
-                                    src="./assets/img/listen-box-5.png"
-                                    alt=""
-                                    class="listen-body__img"
-                                />
-                                <div class="listen-body__blur">
-                                    <div class="listen-body__wrap">
-                                        <a href="#!" class="listen-body__name">
-                                            Comedy
-                                            <img
-                                                src="./assets/img/listen-body-icon.svg"
-                                                alt=""
-                                                class="listen-body__icon"
-                                            />
-                                        </a>
-
-                                        <p class="listen-body__desc">
-                                            120 Podcasts Channel
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="listen-action">
-                        <a href="#!" class="btn listen-btn">All category</a>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Popular -->
-            <section
-                class="popular"
-                id="popular"
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-duration="1500"
-            >
-                <div class="container">
-                    <div class="popular__row">
-                        <h2 class="sub-heading popular__heading">
-                            Our most popular episodes
-                            <img
-                                src="./assets/img/heaidng-h2.svg"
-                                alt=""
-                                class="popular__icon"
-                            />
-                        </h2>
-
-                        <a href="#!" class="btn popular__btn">All episodes</a>
-                    </div>
-
-                    <div class="popular-list">
-                        <div class="row gy-3 row-cols-xl-2">
-                            <!-- Popular Items 1 -->
-                            <div class="col">
-                                <article class="popular-items">
-                                    <img
-                                        src="./assets/img/popular-item-1.png"
-                                        alt=""
-                                        class="popular-items__img"
-                                    />
-                                    <div class="popular-items__content">
-                                        <p class="popular-items__time">
-                                            Episode3 - 1hr 25min
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__heading"
-                                        >
-                                            <h3>
-                                                Should you get outboard audio
-                                                gear?
-                                            </h3>
-                                        </a>
-                                        <p class="popular-items__desc">
-                                            Is hardware really worth it when it
-                                            comes to podcasting? The answer
-                                            is...it depends.
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__action"
-                                        >
-                                            <span class="popular-items__link"
-                                                >Listen now
-                                            </span>
-                                            <svg
-                                                class="popular-items__icon"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 14 14"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <circle
-                                                    cx="7"
-                                                    cy="7"
-                                                    r="7"
-                                                    fill="currentColor"
-                                                />
-                                                <path
-                                                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
-                                                    fill="white"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <!-- Popular Items 2 -->
-                            <div class="col">
-                                <article
-                                    class="popular-items popular-items__active"
-                                >
-                                    <img
-                                        src="./assets/img/popular-item-2.png"
-                                        alt=""
-                                        class="popular-items__img"
-                                    />
-                                    <div class="popular-items__content">
-                                        <p class="popular-items__time">
-                                            Episode3 - 1hr 25min
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__heading"
-                                        >
-                                            <h3>
-                                                Should you get outboard audio
-                                                gear?
-                                            </h3>
-                                        </a>
-                                        <p class="popular-items__desc">
-                                            Is hardware really worth it when it
-                                            comes to podcasting? The answer
-                                            is...it depends.
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__action"
-                                        >
-                                            <span class="popular-items__link"
-                                                >Listen now
-                                            </span>
-                                            <svg
-                                                class="popular-items__icon"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 14 14"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <circle
-                                                    cx="7"
-                                                    cy="7"
-                                                    r="7"
-                                                    fill="currentColor"
-                                                />
-                                                <path
-                                                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
-                                                    fill="white"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <!-- Popular Items 3 -->
-                            <div class="col">
-                                <article
-                                    class="popular-items popular-items__active"
-                                >
-                                    <div class="popular-items__content">
-                                        <p class="popular-items__time">
-                                            Episode3 - 1hr 25min
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__heading"
-                                        >
-                                            <h3>
-                                                Should you get outboard audio
-                                                gear?
-                                            </h3>
-                                        </a>
-                                        <p class="popular-items__desc">
-                                            Is hardware really worth it when it
-                                            comes to podcasting? The answer
-                                            is...it depends.
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__action"
-                                        >
-                                            <span class="popular-items__link"
-                                                >Listen now
-                                            </span>
-                                            <svg
-                                                class="popular-items__icon"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 14 14"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <circle
-                                                    cx="7"
-                                                    cy="7"
-                                                    r="7"
-                                                    fill="currentColor"
-                                                />
-                                                <path
-                                                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
-                                                    fill="white"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <img
-                                        src="./assets/img/popular-item-3.png"
-                                        alt=""
-                                        class="popular-items__img"
-                                    />
-                                </article>
-                            </div>
-
-                            <!-- Popular Items 4 -->
-                            <div class="col">
-                                <article
-                                    class="popular-items popular-items__active"
-                                >
-                                    <div class="popular-items__content">
-                                        <p class="popular-items__time">
-                                            Episode3 - 1hr 25min
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__heading"
-                                        >
-                                            <h3>
-                                                Should you get outboard audio
-                                                gear?
-                                            </h3>
-                                        </a>
-                                        <p class="popular-items__desc">
-                                            Is hardware really worth it when it
-                                            comes to podcasting? The answer
-                                            is...it depends.
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="popular-items__action"
-                                        >
-                                            <span class="popular-items__link"
-                                                >Listen now
-                                            </span>
-                                            <svg
-                                                class="popular-items__icon"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 14 14"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <circle
-                                                    cx="7"
-                                                    cy="7"
-                                                    r="7"
-                                                    fill="currentColor"
-                                                />
-                                                <path
-                                                    d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
-                                                    fill="white"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <img
-                                        src="./assets/img/popular-item-4.png"
-                                        alt=""
-                                        class="popular-items__img"
-                                    />
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dots">
-                        <div class="dot dot-active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-
-                    <a href="#!" class="btn popular__btn btn__mobile"
-                        >All episodes</a
-                    >
-                </div>
-            </section>
-
-            <!-- Review -->
-            <section class="review" id="review">
-                <div class="container">
-                    <div class="review__inner">
-                        <div class="row">
-                            <div class="col-xl-6 col-12">
-                                <div class="review__media">
-                                    <img
-                                        src="./assets/img/review-img-1.png"
-                                        alt=""
-                                        class="review__img--1"
-                                    />
-                                    <img
-                                        src="./assets/img/review-img-2.png"
-                                        alt=""
-                                        class="review__img--2"
-                                    />
-                                </div>
-                                <div class="dots review__dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot dot-active"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-12">
-                                <section class="review__content">
-                                    <img
-                                        src="./assets/img/review-icon.svg"
-                                        alt=""
-                                        class="review__icon"
-                                    />
-
-                                    <h2 class="sub-heading review__heading">
-                                        What our listeners saying about us
-                                        <img
-                                            src="./assets/img/review_heading.svg"
-                                            alt=""
-                                            class="review-icon__heading"
-                                        />
-                                    </h2>
-
-                                    <p class="review__desc">
-                                        Whoa whoa, let me take some notes! A
-                                        wealth of audio knowledge. Every episode
-                                        is a gem! I’ve upped my game
-                                        considerably since I started listening.
-                                        Really a wonderful platofrm for
-                                        podcasts.
-                                    </p>
-
-                                    <span class="review__name"
-                                        >Scott Adams</span
-                                    >
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img
-                    src="./assets/img/review-blur.svg"
-                    alt=""
-                    class="review__icon--blur"
-                />
-            </section>
-
-            <!-- Subscribe -->
-            <section class="subscribe">
-                <div class="container subscribe__container">
-                    <div class="subscribe__inner">
-                        <div class="subscribe__row">
-                            <h2 class="sub-heading subscribe__heading">
-                                Subscribe and get update regularly
-                                <img
-                                    src="./assets/img/heaidng-h2.svg"
-                                    alt=""
-                                    class="subscribe__icon"
-                                />
-                            </h2>
-
-                            <div class="subscribe__desc">
-                                Rebuilt for simplicity and speed, so you can
-                                spend more time discovering and listening to
-                                great podcasts. Get all the updates of latest
-                                podcasts.
-                            </div>
-                        </div>
-
-                        <form action="" class="subscribe-form">
-                            <div class="subscribe-form__item">
-                                <input
-                                    type="text"
-                                    name="Your name"
-                                    id="subscribe-text"
-                                    class="subscribe-text"
-                                    placeholder="Your name"
-                                    required
-                                />
-                            </div>
-
-                            <div class="subscribe-form__item">
-                                <input
-                                    type="email"
-                                    name="Your email address"
-                                    id="subscribe-email"
-                                    class="subscribe-email"
-                                    placeholder="Your email address"
-                                    required
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                href="#!"
-                                class="btn subscribe__btn"
-                            >
-                                Subscribe
-                            </button>
-                        </form>
-
-                        <img
-                            src="./assets/img/subscribe-icon-1.svg"
-                            alt=""
-                            class="subscribe-icon__1 subscribe-icon__1--mobile"
-                        />
-                        <img
-                            src="./assets/img/subscribe-icon-2.svg"
-                            alt=""
-                            class="subscribe-icon__2 subscribe-icon__2--mobile"
-                        />
-                        <img
-                            src="./assets/img/subscribe-icon-3.svg"
-                            alt=""
-                            class="subscribe-icon__3 subscribe-icon__3--mobile"
-                        />
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <!-- Footer Social -->
-                    <div class="footer__social">
-                        <a href="#">
-                            <img
-                                src="./assets/img/Logo.svg"
-                                alt=""
-                                class="footer__img"
-                            />
-                        </a>
-
-                        <p class="footer__copyright">
-                            Copyright © 2022 UIHUT all rights reserved.
-                        </p>
-
-                        <div class="footer__row">
-                            <a href="#!">
-                                <svg
-                                    class="footer__icon"
-                                    width="36"
-                                    height="36"
-                                    viewBox="0 0 36 36"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle
-                                        cx="18"
-                                        cy="18"
-                                        r="18"
-                                        fill="currentColor"
-                                    />
-                                    <path
-                                        d="M19.142 24.8488V18.0346H21.19L21.4615 15.6363H19.142L19.1455 14.4359C19.1455 13.8103 19.2088 13.4753 20.1667 13.4753H21.4471V11.0767H19.3987C16.9381 11.0767 16.0722 12.24 16.0722 14.1967V15.6365H14.5384V18.035H16.0722V24.7521C16.6698 24.8638 17.2875 24.9228 17.92 24.9228C18.3286 24.9228 18.7368 24.8981 19.142 24.8488Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </a>
-
-                            <a href="#!">
-                                <svg
-                                    class="footer__icon"
-                                    width="36"
-                                    height="36"
-                                    viewBox="0 0 36 36"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle
-                                        cx="18"
-                                        cy="18"
-                                        r="18"
-                                        fill="currentColor"
-                                    />
-                                    <path
-                                        d="M11.0768 12.6851C11.0768 12.2188 11.2405 11.8342 11.5679 11.5312C11.8954 11.2282 12.3211 11.0767 12.845 11.0767C13.3595 11.0767 13.7758 11.2258 14.0939 11.5242C14.4214 11.8319 14.5851 12.2328 14.5851 12.727C14.5851 13.1746 14.4261 13.5475 14.108 13.8459C13.7805 14.1536 13.3502 14.3074 12.8169 14.3074H12.8029C12.2883 14.3074 11.872 14.1536 11.5539 13.8459C11.2358 13.5382 11.0768 13.1512 11.0768 12.6851ZM11.2592 24.9228V15.5802H14.3746V24.9228H11.2592ZM16.1007 24.9228H19.2161V19.706C19.2161 19.3797 19.2535 19.1279 19.3283 18.9508C19.4593 18.6338 19.6581 18.3657 19.9248 18.1466C20.1914 17.9275 20.5258 17.8179 20.9281 17.8179C21.976 17.8179 22.4999 18.5219 22.4999 19.9298V24.9228H25.6152V19.5662C25.6152 18.1862 25.2878 17.1396 24.6329 16.4263C23.978 15.713 23.1126 15.3564 22.0368 15.3564C20.8299 15.3564 19.8897 15.8739 19.2161 16.9088V16.9368H19.202L19.2161 16.9088V15.5802H16.1007C16.1194 15.8785 16.1288 16.8063 16.1288 18.3634C16.1288 19.9205 16.1194 22.107 16.1007 24.9228Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </a>
-
-                            <a href="#!">
-                                <svg
-                                    class="footer__icon"
-                                    width="36"
-                                    height="36"
-                                    viewBox="0 0 36 36"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <circle
-                                        cx="18"
-                                        cy="18"
-                                        r="18"
-                                        fill="currentColor"
-                                    />
-                                    <path
-                                        d="M27 12.7158C26.3306 12.9938 25.6174 13.1781 24.8737 13.2675C25.6388 12.8351 26.2226 12.1556 26.4971 11.3365C25.7839 11.7391 24.9964 12.0235 24.1571 12.1822C23.4799 11.4995 22.5146 11.0767 21.4616 11.0767C19.4186 11.0767 17.7739 12.6466 17.7739 14.5712C17.7739 14.8481 17.7986 15.1144 17.8594 15.3679C14.7915 15.2262 12.0769 13.8342 10.2533 11.7136C9.93487 12.2365 9.74813 12.8351 9.74813 13.4795C9.74813 14.6894 10.4062 15.762 11.3872 16.3829C10.7944 16.3723 10.2127 16.2093 9.72 15.9526C9.72 15.9633 9.72 15.9771 9.72 15.991C9.72 17.6887 10.9991 19.0989 12.6765 19.4238C12.3761 19.5015 12.0487 19.5388 11.709 19.5388C11.4727 19.5388 11.2342 19.526 11.0104 19.4791C11.4885 20.8627 12.8453 21.8799 14.4585 21.9129C13.203 22.8427 11.6089 23.4029 9.88313 23.4029C9.5805 23.4029 9.29025 23.3902 9 23.355C10.6346 24.353 12.5719 24.9228 14.661 24.9228C21.4515 24.9228 25.164 19.5974 25.164 14.9813C25.164 14.8268 25.1584 14.6777 25.1505 14.5297C25.8829 14.0376 26.4982 13.4231 27 12.7158Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Footer List -->
-                    <div class="footer__body">
-                        <!-- List 1  -->
-                        <ul class="footer__list">
-                            <h2 class="footer-item__heading">Linkes</h2>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link">Home</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Episodes</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Trending</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Category</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link">Blog</a>
-                            </li>
-                        </ul>
-
-                        <!-- List 2 -->
-                        <ul class="footer__list">
-                            <h2 class="footer-item__heading">Features</h2>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Style guide</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Instructions</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Catelog</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Your podcast</a
-                                >
-                            </li>
-                        </ul>
-
-                        <!-- List 3 -->
-                        <ul class="footer__list">
-                            <h2 class="footer-item__heading">Company</h2>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Privacy</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link">Terms</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Security</a
-                                >
-                            </li>
-                            <li class="footer-item">
-                                <a href="#!" class="footer-item__link"
-                                    >Cookies</a
-                                >
-                            </li>
-                        </ul>
-
-                        <!-- List 4  -->
-                        <ul class="footer__list">
-                            <h2 class="footer-item__heading">Listen on</h2>
-                            <div class="footer-item__social">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/spotify.svg"
-                                        alt=""
-                                        class="footer-item__icon"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/gg.svg"
-                                        alt=""
-                                        class="footer-item__icon"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/soundcloud.svg"
-                                        alt=""
-                                        class="footer-item__icon"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/podcast.svg"
-                                        alt=""
-                                        class="footer-item__icon"
-                                    />
-                                </a>
-                                <a href="#!">
-                                    <img
-                                        src="./assets/img/zing.svg"
-                                        alt=""
-                                        class="footer-item__icon"
-                                    />
-                                </a>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script>
-            new WOW().init();
-            AOS.init();
-        </script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Babble</title>
+
+		<!-- Font  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="./assets/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="./assets/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./assets/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="./assets/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="./assets/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="./assets/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="./assets/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="./assets/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="./assets/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="./assets/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Animation -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Header Navigation -->
+		<div class="nav__inner">
+			<div class="container">
+				<header class="header">
+					<!-- Logo -->
+					<a href="#" class="header__logo">
+						<img
+							src="./assets/img/Logo.svg"
+							alt="Babble"
+							class="header__img"
+						/>
+					</a>
+
+					<!-- Navigation -->
+					<nav class="header__nav" id="nav-pc">
+						<ul class="nav-list">
+							<li>
+								<a href="#popular" class="nav-list__items"
+									>Episodes
+								</a>
+							</li>
+
+							<li>
+								<a href="#list" class="nav-list__items"
+									>Trending
+								</a>
+							</li>
+
+							<li>
+								<a href="#listen" class="nav-list__items"
+									>Category
+									<img
+										src="./assets/img/arrow-down.svg"
+										alt=""
+										class="nav-list__icon"
+									/>
+								</a>
+							</li>
+
+							<li>
+								<a href="#review" class="nav-list__items"
+									>Blog
+								</a>
+							</li>
+
+							<li class="items-pc">
+								<a href="#!" class="nav-list__items">Sign in</a>
+							</li>
+							<li class="items-pc">
+								<a href="#!" class="nav-list__items">Sign up</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Action -->
+					<div class="header__action">
+						<a href="#!" class="header__link">Log in</a>
+						<a href="#!" class="header__btn btn">Sign up</a>
+					</div>
+
+					<label for="menu-checkbox" class="header-menu">
+						<img
+							src="./assets/img/Menu.svg"
+							alt=""
+							class="header-menu__icon"
+						/>
+					</label>
+				</header>
+			</div>
+		</div>
+
+		<!-- Menu -->
+		<header class="menu">
+			<input
+				type="checkbox"
+				name=""
+				id="menu-checkbox"
+				class="menu-checkbox"
+				hidden
+			/>
+			<!-- Overlay -->
+			<label for="menu-checkbox" class="overlay"></label>
+
+			<!-- Drawer -->
+			<div class="drawer">
+				<!-- Logo -->
+				<a href="#" class="header__logo">
+					<img
+						src="./assets/img/Logo.svg"
+						alt="Babble"
+						class="header__img"
+					/>
+				</a>
+
+				<!-- Navigation -->
+				<nav class="header__nav" id="nav-mobile"></nav>
+				<script>
+					const navPc = document.querySelector("#nav-pc");
+					const navMobile = document.querySelector("#nav-mobile");
+
+					navMobile.innerHTML = navPc.innerHTML;
+				</script>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<div class="hero__inner">
+						<div class="row">
+							<!-- Hero Media -->
+							<div class="col-xl-6 col-12">
+								<div class="hero-media">
+									<!-- Media One -->
+									<div class="hero-media__one">
+										<div
+											class="hero-media__top animate__animated animate__flipInY wow"
+										>
+											<img
+												src="./assets/img/hero-media-one.png"
+												alt=""
+												class="hero-media__img"
+											/>
+											<img
+												src="./assets/img/hero-audio.svg"
+												alt=""
+												class="hero-media__audio"
+											/>
+										</div>
+
+										<p class="hero-media__name">
+											Podcast listener
+										</p>
+										<div class="hero-media__ava">
+											<img
+												src="./assets/img/z5948822015245_f979d87b6f13c15e1e519024ba1e41fe.jpg"
+												alt=""
+												class="hero-ava"
+											/>
+											<img
+												src="./assets/img/z5948845419419_5966d94044478380bf5db64653e6d327.jpg"
+												alt=""
+												class="hero-ava"
+											/>
+											<img
+												src="./assets/img/z5948858632150_f88ff7ec1c2581b5b3786acae7af1641.jpg"
+												alt=""
+												class="hero-ava"
+											/>
+											<span class="hero-ava__decor"
+												>+50K</span
+											>
+										</div>
+									</div>
+
+									<!-- Media Two -->
+									<div class="hero-media__two">
+										<a href="#!" class="hero-media__circle">
+											<img
+												src="./assets/img/separated.svg"
+												alt=""
+												class="separated"
+											/>
+											<div class="circle">
+												500+
+												<span>Podcasts</span>
+											</div>
+										</a>
+
+										<div class="hero-media__list">
+											<a href="#!">
+												<img
+													src="./assets/img/spotify.svg"
+													alt=""
+													class="hero-media__item"
+												/>
+											</a>
+											<a href="#!">
+												<img
+													src="./assets/img/gg.svg"
+													alt=""
+													class="hero-media__item"
+												/>
+											</a>
+											<a href="#!">
+												<img
+													src="./assets/img/podcast.svg"
+													alt=""
+													class="hero-media__item"
+												/>
+											</a>
+											<img
+												src="./assets/img/separated.svg"
+												alt=""
+												class="separated"
+											/>
+										</div>
+
+										<figure
+											class="hero-thumb animate__animated animate__flipInY wow"
+										>
+											<img
+												src="./assets/img/hero-media-two.png"
+												alt=""
+												class="hero-thumb__img"
+											/>
+											<div class="hero-thumb__box">
+												<p class="hero-thumb__name">
+													Sarah Taylor
+													<span>Song podcaster</span>
+												</p>
+											</div>
+										</figure>
+									</div>
+								</div>
+							</div>
+
+							<!-- Hero Content -->
+							<div class="col-xl-5 col-12">
+								<section class="hero-content">
+									<h1 class="sub-heading hero-heading">
+										A new era of podcasting for you
+										<img
+											src="./assets/img/heading.svg"
+											alt=""
+											class="heading__icon"
+										/>
+									</h1>
+									<p class="hero-desc">
+										Rebuilt for simplicity and speed, so you
+										can spend more time discovering and
+										listening to great podcasts.
+									</p>
+
+									<div class="hero-action">
+										<a href="#!" class="hero-btn btn"
+											>Get Started</a
+										>
+										<a href="#!" class="hero-link"
+											>Listen now
+											<img
+												src="./assets/img/Play.svg"
+												alt=""
+												class="hero-link__icon"
+										/></a>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- List Podcast -->
+			<div
+				class="container"
+				id="list"
+				data-aos="fade-up"
+				data-aos-duration="3000"
+			>
+				<section class="list-podcast">
+					<div class="row list__row">
+						<div class="col-xl-6 col-12">
+							<!-- List Content -->
+							<section class="list-content">
+								<h2 class="sub-heading list-content__heading">
+									We are in the top podcast directories
+									<img
+										src="./assets/img/heading.svg"
+										alt=""
+										class="list__icon"
+									/>
+								</h2>
+								<p class="list-content__desc">
+									Rebuilt for simplicity and speed, so you can
+									spend more time discovering and listening to
+									great podcasts. We are everywhere on the
+									internet.
+								</p>
+								<a href="#!" class="btn list-content__btn"
+									>Listen now
+									<svg
+										class="list-content__icon"
+										width="18"
+										height="18"
+										viewBox="0 0 18 18"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<circle
+											cx="9"
+											cy="9"
+											r="9"
+											fill="white"
+										/>
+										<path
+											d="M12.85 8.9134C12.9167 8.95189 12.9167 9.04811 12.85 9.0866L7.15 12.3775C7.08333 12.416 7 12.3679 7 12.2909L7 5.7091C7 5.63212 7.08333 5.58401 7.15 5.6225L12.85 8.9134Z"
+											fill="#936CDD"
+										/>
+									</svg>
+								</a>
+							</section>
+						</div>
+
+						<!-- List Media -->
+						<div class="col-xl-6 col-12">
+							<div class="list-media">
+								<img
+									src="./assets/img/list-blur.svg"
+									alt=""
+									class="list-media__blur"
+								/>
+
+								<img
+									src="./assets/img/podcast.svg"
+									alt=""
+									class="list-media__img--1"
+								/>
+
+								<img
+									src="./assets/img/soundcloud.svg"
+									alt=""
+									class="list-media__img--2"
+								/>
+
+								<img
+									src="./assets/img/gg.svg"
+									alt=""
+									class="list-media__img--3"
+								/>
+
+								<img
+									src="./assets/img/spotify.svg"
+									alt=""
+									class="list-media__img--4"
+								/>
+
+								<img
+									src="./assets/img/zing.svg"
+									alt=""
+									class="list-media__img--5"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Listen -->
+			<div class="container" id="listen">
+				<section class="listen">
+					<h2
+						class="sub-heading listen__heading animate__animated animate__flipInX wow"
+					>
+						Listen by category
+						<img
+							src="./assets/img/heading.svg"
+							alt=""
+							class="listen__icon"
+						/>
+					</h2>
+
+					<p class="listen__desc">
+						Listen all kind of podcasts you like by exploring
+						categories. Make your day even better
+					</p>
+
+					<div class="row listen-body">
+						<!-- Box 1 -->
+						<div
+							class="col-md-12 col-12 listen-item__1"
+							data-aos="flip-down"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							<article class="listen-body__box">
+								<img
+									src="./assets/img/listen-box-1.png"
+									alt=""
+									class="listen-body__img"
+								/>
+								<div class="listen-body__blur">
+									<div class="listen-body__wrap">
+										<a href="#!" class="listen-body__name">
+											Education
+											<img
+												src="./assets/img/listen-body-icon.svg"
+												alt=""
+												class="listen-body__icon"
+											/>
+										</a>
+
+										<p class="listen-body__desc">
+											120 Podcasts Channel
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<!-- Box 2 -->
+						<div
+							class="col-xl-12 col-12 listen-item__2"
+							data-aos="flip-up"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							<article class="listen-body__box">
+								<img
+									src="./assets/img/listen-box-2.png"
+									alt=""
+									class="listen-body__img"
+								/>
+								<div class="listen-body__blur">
+									<div class="listen-body__wrap">
+										<a href="#!" class="listen-body__name">
+											Healthcare
+											<img
+												src="./assets/img/listen-body-icon.svg"
+												alt=""
+												class="listen-body__icon"
+											/>
+										</a>
+
+										<p class="listen-body__desc">
+											120 Podcasts Channel
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<!-- Box 3 -->
+						<div
+							class="col-xl-12 col-9 listen-item__3"
+							data-aos="flip-up"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							<article class="listen-body__box">
+								<img
+									src="./assets/img/listen-box-3.png"
+									alt=""
+									class="listen-body__img"
+								/>
+								<div class="listen-body__blur">
+									<div class="listen-body__wrap">
+										<a href="#!" class="listen-body__name">
+											Music
+											<img
+												src="./assets/img/listen-body-icon.svg"
+												alt=""
+												class="listen-body__icon"
+											/>
+										</a>
+
+										<p class="listen-body__desc">
+											120 Podcasts Channel
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<!-- Box 4 -->
+						<div
+							class="col-xl-12 col-9 listen-item__4"
+							data-aos="flip-up"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							<article class="listen-body__box">
+								<img
+									src="./assets/img/listen-box-4.png"
+									alt=""
+									class="listen-body__img"
+								/>
+								<div class="listen-body__blur">
+									<div class="listen-body__wrap">
+										<a href="#!" class="listen-body__name">
+											Fashion
+											<img
+												src="./assets/img/listen-body-icon.svg"
+												alt=""
+												class="listen-body__icon"
+											/>
+										</a>
+
+										<p class="listen-body__desc">
+											120 Podcasts Channel
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<!-- Box 5 -->
+						<div
+							class="col-xl-12 col-12 listen-item__5"
+							data-aos="flip-up"
+							data-aos-easing="linear"
+							data-aos-duration="1000"
+						>
+							<article class="listen-body__box">
+								<img
+									src="./assets/img/listen-box-5.png"
+									alt=""
+									class="listen-body__img"
+								/>
+								<div class="listen-body__blur">
+									<div class="listen-body__wrap">
+										<a href="#!" class="listen-body__name">
+											Comedy
+											<img
+												src="./assets/img/listen-body-icon.svg"
+												alt=""
+												class="listen-body__icon"
+											/>
+										</a>
+
+										<p class="listen-body__desc">
+											120 Podcasts Channel
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+
+					<div class="listen-action">
+						<a href="#!" class="btn listen-btn">All category</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- Popular -->
+			<section
+				class="popular"
+				id="popular"
+				data-aos="fade-up"
+				data-aos-anchor-placement="center-bottom"
+				data-aos-duration="1500"
+			>
+				<div class="container">
+					<div class="popular__row">
+						<h2 class="sub-heading popular__heading">
+							Our most popular episodes
+							<img
+								src="./assets/img/heaidng-h2.svg"
+								alt=""
+								class="popular__icon"
+							/>
+						</h2>
+
+						<a href="#!" class="btn popular__btn">All episodes</a>
+					</div>
+
+					<div class="popular-list">
+						<div class="row gy-3 g-lg-2 row-cols-xl-2">
+							<!-- Popular Items 1 -->
+							<div class="col col-lg-6">
+								<article class="popular-items">
+									<img
+										src="./assets/img/popular-item-1.png"
+										alt=""
+										class="popular-items__img"
+									/>
+									<div class="popular-items__content">
+										<p class="popular-items__time">
+											Episode3 - 1hr 25min
+										</p>
+										<a
+											href="#!"
+											class="popular-items__heading"
+										>
+											<h3>
+												Should you get outboard audio
+												gear?
+											</h3>
+										</a>
+										<p class="popular-items__desc">
+											Is hardware really worth it when it
+											comes to podcasting? The answer
+											is...it depends.
+										</p>
+										<a
+											href="#!"
+											class="popular-items__action"
+										>
+											<span class="popular-items__link"
+												>Listen now
+											</span>
+											<svg
+												class="popular-items__icon"
+												width="14"
+												height="14"
+												viewBox="0 0 14 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<circle
+													cx="7"
+													cy="7"
+													r="7"
+													fill="currentColor"
+												/>
+												<path
+													d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</div>
+								</article>
+							</div>
+
+							<!-- Popular Items 2 -->
+							<div class="col col-lg-6">
+								<article
+									class="popular-items popular-items__active"
+								>
+									<img
+										src="./assets/img/popular-item-2.png"
+										alt=""
+										class="popular-items__img"
+									/>
+									<div class="popular-items__content">
+										<p class="popular-items__time">
+											Episode3 - 1hr 25min
+										</p>
+										<a
+											href="#!"
+											class="popular-items__heading"
+										>
+											<h3>
+												Should you get outboard audio
+												gear?
+											</h3>
+										</a>
+										<p class="popular-items__desc">
+											Is hardware really worth it when it
+											comes to podcasting? The answer
+											is...it depends.
+										</p>
+										<a
+											href="#!"
+											class="popular-items__action"
+										>
+											<span class="popular-items__link"
+												>Listen now
+											</span>
+											<svg
+												class="popular-items__icon"
+												width="14"
+												height="14"
+												viewBox="0 0 14 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<circle
+													cx="7"
+													cy="7"
+													r="7"
+													fill="currentColor"
+												/>
+												<path
+													d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</div>
+								</article>
+							</div>
+
+							<!-- Popular Items 3 -->
+							<div class="col col-lg-6">
+								<article
+									class="popular-items popular-items__active"
+								>
+									<div class="popular-items__content">
+										<p class="popular-items__time">
+											Episode3 - 1hr 25min
+										</p>
+										<a
+											href="#!"
+											class="popular-items__heading"
+										>
+											<h3>
+												Should you get outboard audio
+												gear?
+											</h3>
+										</a>
+										<p class="popular-items__desc">
+											Is hardware really worth it when it
+											comes to podcasting? The answer
+											is...it depends.
+										</p>
+										<a
+											href="#!"
+											class="popular-items__action"
+										>
+											<span class="popular-items__link"
+												>Listen now
+											</span>
+											<svg
+												class="popular-items__icon"
+												width="14"
+												height="14"
+												viewBox="0 0 14 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<circle
+													cx="7"
+													cy="7"
+													r="7"
+													fill="currentColor"
+												/>
+												<path
+													d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</div>
+									<img
+										src="./assets/img/popular-item-3.png"
+										alt=""
+										class="popular-items__img"
+									/>
+								</article>
+							</div>
+
+							<!-- Popular Items 4 -->
+							<div class="col col-lg-6">
+								<article
+									class="popular-items popular-items__active"
+								>
+									<div class="popular-items__content">
+										<p class="popular-items__time">
+											Episode3 - 1hr 25min
+										</p>
+										<a
+											href="#!"
+											class="popular-items__heading"
+										>
+											<h3>
+												Should you get outboard audio
+												gear?
+											</h3>
+										</a>
+										<p class="popular-items__desc">
+											Is hardware really worth it when it
+											comes to podcasting? The answer
+											is...it depends.
+										</p>
+										<a
+											href="#!"
+											class="popular-items__action"
+										>
+											<span class="popular-items__link"
+												>Listen now
+											</span>
+											<svg
+												class="popular-items__icon"
+												width="14"
+												height="14"
+												viewBox="0 0 14 14"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<circle
+													cx="7"
+													cy="7"
+													r="7"
+													fill="currentColor"
+												/>
+												<path
+													d="M9.85 6.9134C9.91667 6.95189 9.91667 7.04811 9.85 7.0866L5.65 9.51147C5.58333 9.54996 5.5 9.50185 5.5 9.42487V4.57513C5.5 4.49815 5.58333 4.45004 5.65 4.48853L9.85 6.9134Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</div>
+									<img
+										src="./assets/img/popular-item-4.png"
+										alt=""
+										class="popular-items__img"
+									/>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="dots">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+
+					<a href="#!" class="btn popular__btn btn__mobile"
+						>All episodes</a
+					>
+				</div>
+			</section>
+
+			<!-- Review -->
+			<section class="review" id="review">
+				<div class="container">
+					<div class="review__inner">
+						<div class="row">
+							<div class="col-xl-6 col-lg-6 col-12">
+								<div class="review__media">
+									<img
+										src="./assets/img/review-img-1.png"
+										alt=""
+										class="review__img--1"
+									/>
+									<img
+										src="./assets/img/review-img-2.png"
+										alt=""
+										class="review__img--2"
+									/>
+								</div>
+								<div class="dots review__dots">
+									<div class="dot"></div>
+									<div class="dot"></div>
+									<div class="dot dot-active"></div>
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-12">
+								<section class="review__content">
+									<img
+										src="./assets/img/review-icon.svg"
+										alt=""
+										class="review__icon"
+									/>
+
+									<h2 class="sub-heading review__heading">
+										What our listeners saying about us
+										<img
+											src="./assets/img/review_heading.svg"
+											alt=""
+											class="review-icon__heading"
+										/>
+									</h2>
+
+									<p class="review__desc">
+										Whoa whoa, let me take some notes! A
+										wealth of audio knowledge. Every episode
+										is a gem! I’ve upped my game
+										considerably since I started listening.
+										Really a wonderful platofrm for
+										podcasts.
+									</p>
+
+									<span class="review__name"
+										>Scott Adams</span
+									>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img
+					src="./assets/img/review-blur.svg"
+					alt=""
+					class="review__icon--blur"
+				/>
+			</section>
+
+			<!-- Subscribe -->
+			<section class="subscribe">
+				<div class="container subscribe__container">
+					<div class="subscribe__inner">
+						<div class="subscribe__row">
+							<h2 class="sub-heading subscribe__heading">
+								Subscribe and get update regularly
+								<img
+									src="./assets/img/heaidng-h2.svg"
+									alt=""
+									class="subscribe__icon"
+								/>
+							</h2>
+
+							<div class="subscribe__desc">
+								Rebuilt for simplicity and speed, so you can
+								spend more time discovering and listening to
+								great podcasts. Get all the updates of latest
+								podcasts.
+							</div>
+						</div>
+
+						<form action="" class="subscribe-form">
+							<div class="subscribe-form__item">
+								<input
+									type="text"
+									name="Your name"
+									id="subscribe-text"
+									class="subscribe-text"
+									placeholder="Your name"
+									required
+								/>
+							</div>
+
+							<div class="subscribe-form__item">
+								<input
+									type="email"
+									name="Your email address"
+									id="subscribe-email"
+									class="subscribe-email"
+									placeholder="Your email address"
+									required
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+								/>
+							</div>
+
+							<button
+								type="submit"
+								href="#!"
+								class="btn subscribe__btn"
+							>
+								Subscribe
+							</button>
+						</form>
+
+						<img
+							src="./assets/img/subscribe-icon-1.svg"
+							alt=""
+							class="subscribe-icon__1 subscribe-icon__1--mobile"
+						/>
+						<img
+							src="./assets/img/subscribe-icon-2.svg"
+							alt=""
+							class="subscribe-icon__2 subscribe-icon__2--mobile"
+						/>
+						<img
+							src="./assets/img/subscribe-icon-3.svg"
+							alt=""
+							class="subscribe-icon__3 subscribe-icon__3--mobile"
+						/>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<!-- Footer Social -->
+					<div class="footer__social">
+						<a href="#">
+							<img
+								src="./assets/img/Logo.svg"
+								alt=""
+								class="footer__img"
+							/>
+						</a>
+
+						<p class="footer__copyright">
+							Copyright © 2022 UIHUT all rights reserved.
+						</p>
+
+						<div class="footer__row">
+							<a href="#!">
+								<svg
+									class="footer__icon"
+									width="36"
+									height="36"
+									viewBox="0 0 36 36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="18"
+										cy="18"
+										r="18"
+										fill="currentColor"
+									/>
+									<path
+										d="M19.142 24.8488V18.0346H21.19L21.4615 15.6363H19.142L19.1455 14.4359C19.1455 13.8103 19.2088 13.4753 20.1667 13.4753H21.4471V11.0767H19.3987C16.9381 11.0767 16.0722 12.24 16.0722 14.1967V15.6365H14.5384V18.035H16.0722V24.7521C16.6698 24.8638 17.2875 24.9228 17.92 24.9228C18.3286 24.9228 18.7368 24.8981 19.142 24.8488Z"
+										fill="white"
+									/>
+								</svg>
+							</a>
+
+							<a href="#!">
+								<svg
+									class="footer__icon"
+									width="36"
+									height="36"
+									viewBox="0 0 36 36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="18"
+										cy="18"
+										r="18"
+										fill="currentColor"
+									/>
+									<path
+										d="M11.0768 12.6851C11.0768 12.2188 11.2405 11.8342 11.5679 11.5312C11.8954 11.2282 12.3211 11.0767 12.845 11.0767C13.3595 11.0767 13.7758 11.2258 14.0939 11.5242C14.4214 11.8319 14.5851 12.2328 14.5851 12.727C14.5851 13.1746 14.4261 13.5475 14.108 13.8459C13.7805 14.1536 13.3502 14.3074 12.8169 14.3074H12.8029C12.2883 14.3074 11.872 14.1536 11.5539 13.8459C11.2358 13.5382 11.0768 13.1512 11.0768 12.6851ZM11.2592 24.9228V15.5802H14.3746V24.9228H11.2592ZM16.1007 24.9228H19.2161V19.706C19.2161 19.3797 19.2535 19.1279 19.3283 18.9508C19.4593 18.6338 19.6581 18.3657 19.9248 18.1466C20.1914 17.9275 20.5258 17.8179 20.9281 17.8179C21.976 17.8179 22.4999 18.5219 22.4999 19.9298V24.9228H25.6152V19.5662C25.6152 18.1862 25.2878 17.1396 24.6329 16.4263C23.978 15.713 23.1126 15.3564 22.0368 15.3564C20.8299 15.3564 19.8897 15.8739 19.2161 16.9088V16.9368H19.202L19.2161 16.9088V15.5802H16.1007C16.1194 15.8785 16.1288 16.8063 16.1288 18.3634C16.1288 19.9205 16.1194 22.107 16.1007 24.9228Z"
+										fill="white"
+									/>
+								</svg>
+							</a>
+
+							<a href="#!">
+								<svg
+									class="footer__icon"
+									width="36"
+									height="36"
+									viewBox="0 0 36 36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle
+										cx="18"
+										cy="18"
+										r="18"
+										fill="currentColor"
+									/>
+									<path
+										d="M27 12.7158C26.3306 12.9938 25.6174 13.1781 24.8737 13.2675C25.6388 12.8351 26.2226 12.1556 26.4971 11.3365C25.7839 11.7391 24.9964 12.0235 24.1571 12.1822C23.4799 11.4995 22.5146 11.0767 21.4616 11.0767C19.4186 11.0767 17.7739 12.6466 17.7739 14.5712C17.7739 14.8481 17.7986 15.1144 17.8594 15.3679C14.7915 15.2262 12.0769 13.8342 10.2533 11.7136C9.93487 12.2365 9.74813 12.8351 9.74813 13.4795C9.74813 14.6894 10.4062 15.762 11.3872 16.3829C10.7944 16.3723 10.2127 16.2093 9.72 15.9526C9.72 15.9633 9.72 15.9771 9.72 15.991C9.72 17.6887 10.9991 19.0989 12.6765 19.4238C12.3761 19.5015 12.0487 19.5388 11.709 19.5388C11.4727 19.5388 11.2342 19.526 11.0104 19.4791C11.4885 20.8627 12.8453 21.8799 14.4585 21.9129C13.203 22.8427 11.6089 23.4029 9.88313 23.4029C9.5805 23.4029 9.29025 23.3902 9 23.355C10.6346 24.353 12.5719 24.9228 14.661 24.9228C21.4515 24.9228 25.164 19.5974 25.164 14.9813C25.164 14.8268 25.1584 14.6777 25.1505 14.5297C25.8829 14.0376 26.4982 13.4231 27 12.7158Z"
+										fill="white"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Footer List -->
+					<div class="footer__body">
+						<!-- List 1  -->
+						<ul class="footer__list">
+							<h2 class="footer-item__heading">Linkes</h2>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link">Home</a>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Episodes</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Trending</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Category</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link">Blog</a>
+							</li>
+						</ul>
+
+						<!-- List 2 -->
+						<ul class="footer__list">
+							<h2 class="footer-item__heading">Features</h2>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Style guide</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Instructions</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Catelog</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Your podcast</a
+								>
+							</li>
+						</ul>
+
+						<!-- List 3 -->
+						<ul class="footer__list">
+							<h2 class="footer-item__heading">Company</h2>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Privacy</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link">Terms</a>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Security</a
+								>
+							</li>
+							<li class="footer-item">
+								<a href="#!" class="footer-item__link"
+									>Cookies</a
+								>
+							</li>
+						</ul>
+
+						<!-- List 4  -->
+						<ul class="footer__list">
+							<h2 class="footer-item__heading">Listen on</h2>
+							<div class="footer-item__social">
+								<a href="#!">
+									<img
+										src="./assets/img/spotify.svg"
+										alt=""
+										class="footer-item__icon"
+									/>
+								</a>
+								<a href="#!">
+									<img
+										src="./assets/img/gg.svg"
+										alt=""
+										class="footer-item__icon"
+									/>
+								</a>
+								<a href="#!">
+									<img
+										src="./assets/img/soundcloud.svg"
+										alt=""
+										class="footer-item__icon"
+									/>
+								</a>
+								<a href="#!">
+									<img
+										src="./assets/img/podcast.svg"
+										alt=""
+										class="footer-item__icon"
+									/>
+								</a>
+								<a href="#!">
+									<img
+										src="./assets/img/zing.svg"
+										alt=""
+										class="footer-item__icon"
+									/>
+								</a>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+			new WOW().init();
+			AOS.init();
+		</script>
+	</body>
 </html>

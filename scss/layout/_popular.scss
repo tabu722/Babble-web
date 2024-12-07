@@ -1,121 +1,122 @@
 @use "../common";
 
 .popular {
-    margin-top: 160px;
-    padding: 100px 0;
-    background: #fff8f3;
+	margin-top: 160px;
+	padding: 100px 0;
+	background: #fff8f3;
 
-    &__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-    &__heading {
-        @include common.heading-2;
-        width: 390px;
-    }
+	&__heading {
+		@include common.heading-2;
+		width: 390px;
+	}
 
-    &__icon {
-        position: absolute;
-        z-index: -1;
-        top: 38px;
-        right: 42px;
-    }
+	&__icon {
+		position: absolute;
+		z-index: -1;
+		top: 38px;
+		right: 42px;
+	}
 
-    &__btn {
-        @include common.clickBtn($background: #201830);
+	&__btn {
+		@include common.clickBtn($background: #201830);
 
-        &:hover {
-            color: #201830;
-            border-color: currentColor;
-        }
-    }
+		&:hover {
+			color: #201830;
+			border-color: currentColor;
+		}
+	}
 }
 
 .popular-list {
-    margin-top: 84px;
+	margin-top: 84px;
 }
 
 .popular-items {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
 
-    &__img {
-        width: 270px;
-        height: 286px;
-        border-radius: 8px;
-        object-fit: cover;
-    }
+	&__img {
+		width: 270px;
+		height: 286px;
+		border-radius: 8px;
+		object-fit: cover;
+	}
 
-    &__content {
-        width: 270px;
-    }
+	&__content {
+		width: 270px;
+	}
 
-    &__time {
-        @include common.desc-3;
+	&__time {
+		@include common.desc-3;
 
-        color: #fd6f1f;
-    }
+		color: #fd6f1f;
+	}
 
-    &__heading {
-        @include common.heading-3;
+	&__heading {
+		@include common.heading-3;
 
-        display: inline-block;
-        margin-top: 6px;
-    }
+		display: inline-block;
+		margin-top: 6px;
+	}
 
-    &__desc {
-        @include common.desc-2;
+	&__desc {
+		@include common.desc-2;
 
-        margin-top: 18px;
-        color: #665f73;
-    }
+		margin-top: 18px;
+		color: #665f73;
+	}
 
-    &__action {
-        margin-top: 11px;
-        display: inline-flex;
-        align-items: center;
-        column-gap: 6px;
-    }
+	&__action {
+		margin-top: 11px;
+		display: inline-flex;
+		align-items: center;
+		column-gap: 6px;
+	}
 
-    &__link {
-        display: inline-block;
-        color: #201830;
-        line-height: 1.71;
-        font: {
-            size: 1.4rem;
-            weight: 600;
-        }
-        transition: 0.25s;
-    }
+	&__link {
+		display: inline-block;
+		color: #201830;
+		line-height: 1.71;
+		font: {
+			size: 1.4rem;
+			weight: 600;
+		}
+		transition: 0.25s;
+	}
 
-    &__icon {
-        color: #201830;
-        transition: 0.25s;
-    }
+	&__icon {
+		color: #201830;
+		transition: 0.25s;
+	}
 }
 
 .popular-items__action:hover > * {
-    color: #936cdd;
+	color: #936cdd;
 }
 
 .dots {
-    margin-top: 55px;
-    @include common.flexCenter;
-    column-gap: 12px;
+	margin-top: 55px;
+	@include common.flexCenter;
+	column-gap: 12px;
 
-    .dot {
-        width: 8px;
-        height: 8px;
-        background: #d8d5de;
-        border-radius: 50%;
-    }
+	.dot {
+		width: 8px;
+		height: 8px;
+		background: #d8d5de;
+		border-radius: 50%;
 
-    .dot-active {
-        width: 12px;
-        height: 12px;
-        background: #936cdd;
-    }
+		&:hover {
+			width: 12px;
+			height: 12px;
+			background: #936cdd;
+			cursor: pointer;
+		}
+	}
 }

@@ -2,195 +2,195 @@
 @use "../abstracts";
 
 .hero {
-    padding: 80px 0 140px;
-    background: abstracts.$colorWhite;
+	padding: 80px 0 140px;
+	background: abstracts.$colorWhite;
 }
 
 /* Hero Media */
 
 .hero-media {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
 
-    &__top {
-        padding-bottom: 30px;
-        position: relative;
-    }
+	&__top {
+		padding-bottom: 30px;
+		position: relative;
+	}
 
-    /* Hero Media One*/
-    &__img {
-        width: 270px;
-        height: 302px;
-        border-radius: 8px;
-        object-fit: cover;
-        background: lightgray 50%;
-    }
+	/* Hero Media One*/
+	&__img {
+		width: 270px;
+		height: 302px;
+		border-radius: 8px;
+		object-fit: cover;
+		background: lightgray 50%;
+	}
 
-    &__audio {
-        position: absolute;
-        bottom: 0;
-        left: 38px;
-    }
+	&__audio {
+		position: absolute;
+		bottom: 0;
+		left: 38px;
+	}
 
-    &__name {
-        margin-top: 23px;
-        color: #201830;
-        line-height: 1.71;
-        font: {
-            size: 1.4rem;
-            weight: 600;
-        }
-    }
+	&__name {
+		margin-top: 23px;
+		color: #201830;
+		line-height: 1.71;
+		font: {
+			size: 1.4rem;
+			weight: 600;
+		}
+	}
 
-    &__ava {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-    }
+	&__ava {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+	}
 
-    /*Hero Media Two */
+	/*Hero Media Two */
 
-    &__circle {
-        display: flex;
-        column-gap: 15px;
+	&__circle {
+		display: flex;
+		column-gap: 15px;
 
-        .circle {
-            @include common.flexCenter;
-            flex-direction: column;
-            width: 82px;
-            height: 82px;
-            border-radius: 50%;
-            background: #ff9051;
-            color: #fff;
-            line-height: 1;
-            font: {
-                size: 1.4rem;
-                weight: 800;
-            }
+		.circle {
+			@include common.flexCenter;
+			flex-direction: column;
+			width: 82px;
+			height: 82px;
+			border-radius: 50%;
+			background: #ff9051;
+			color: #fff;
+			line-height: 1;
+			font: {
+				size: 1.4rem;
+				weight: 800;
+			}
 
-            span {
-                display: inline-block;
-                color: #ffefe7;
-                margin-top: 4px;
-                font: {
-                    size: 1rem;
-                    weight: 500;
-                }
-            }
-        }
-    }
+			span {
+				display: inline-block;
+				color: #ffefe7;
+				margin-top: 4px;
+				font: {
+					size: 1rem;
+					weight: 500;
+				}
+			}
+		}
+	}
 
-    &__list {
-        margin-top: 12px;
-        display: flex;
-        column-gap: 18px;
+	&__list {
+		margin-top: 12px;
+		display: flex;
+		column-gap: 18px;
 
-        .separated {
-            margin-left: 9px;
-        }
-    }
+		.separated {
+			margin-left: 9px;
+		}
+	}
 }
 .hero-thumb {
-    position: relative;
-    margin-top: 14px;
+	position: relative;
+	margin-top: 14px;
 
-    &__img {
-        width: 270px;
-        height: 302px;
-        object-fit: cover;
-    }
+	&__img {
+		width: 270px;
+		height: 302px;
+		object-fit: cover;
+	}
 
-    &__box {
-        position: absolute;
-        bottom: 16px;
-        left: 38px;
-        @include common.flexCenter;
-        width: 194px;
-        border-radius: 9px;
-        background: rgba(255, 255, 255, 0.4);
-        box-shadow: 0px 12px 44px 0px rgba(0, 0, 0, 0.07);
-        backdrop-filter: blur(5px);
-        text-align: center;
-    }
+	&__box {
+		position: absolute;
+		bottom: 16px;
+		left: 38px;
+		@include common.flexCenter;
+		width: 194px;
+		border-radius: 9px;
+		background: rgba(255, 255, 255, 0.4);
+		box-shadow: 0px 12px 44px 0px rgba(0, 0, 0, 0.07);
+		backdrop-filter: blur(5px);
+		text-align: center;
+	}
 
-    &__name {
-        padding: 14px 50px;
-        color: #201830;
-        line-height: 1;
-        font: {
-            size: 1.4rem;
-            weight: 600;
-        }
+	&__name {
+		padding: 14px 50px;
+		color: #201830;
+		line-height: 1;
+		font: {
+			size: 1.4rem;
+			weight: 600;
+		}
 
-        span {
-            display: inline-block;
-            margin-top: 6px;
-            color: #665f73;
-            font: {
-                size: 1.2rem;
-                weight: 400;
-            }
-        }
-    }
+		span {
+			display: inline-block;
+			margin-top: 6px;
+			color: #665f73;
+			font: {
+				size: 1.2rem;
+				weight: 400;
+			}
+		}
+	}
 }
 
 .hero-ava:first-child {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .hero-ava {
-    width: 48px;
-    height: 48px;
-    margin-left: -20px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    object-fit: cover;
+	width: 48px;
+	height: 48px;
+	margin-left: -20px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	object-fit: cover;
 
-    &__decor {
-        @include common.flexCenter;
-        width: 48px;
-        height: 48px;
-        margin-left: -20px;
-        border-radius: 50%;
-        background: #201830;
-        border: 2px solid #fff;
-        color: #fff;
-    }
+	&__decor {
+		@include common.flexCenter;
+		width: 48px;
+		height: 48px;
+		margin-left: -20px;
+		border-radius: 50%;
+		background: #201830;
+		border: 2px solid #fff;
+		color: #fff;
+	}
 }
 
 /* Hero Content */
 .hero-content {
-    margin-left: 100px;
+	margin-left: 100px;
 }
 
 .hero-heading {
-    width: 470px;
-    @include common.heading-1;
+	width: 470px;
+	@include common.heading-1;
 }
 
 .hero-desc {
-    margin-top: 20px;
-    width: 470px;
-    color: #665f73;
-    @include common.desc-1;
+	margin-top: 20px;
+	width: 470px;
+	color: #665f73;
+	@include common.desc-1;
 }
 
 .hero-action {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    column-gap: 28px;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	column-gap: 28px;
 
-    .hero-link {
-        color: #201830;
-        line-height: 1.66;
-        font: {
-            size: 18px;
-            weight: 600;
-        }
-        display: flex;
-        align-items: center;
-        column-gap: 8px;
-    }
+	.hero-link {
+		color: #201830;
+		line-height: 1.66;
+		font: {
+			size: 18px;
+			weight: 600;
+		}
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+	}
 }
