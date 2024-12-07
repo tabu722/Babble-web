@@ -2520,6 +2520,9 @@ button {
     width: 339px;
     font-size: 1.4rem;
   }
+  .subscribe__btn {
+    width: 157px;
+  }
   .subscribe-form {
     margin-top: 38px;
     row-gap: 12px;
